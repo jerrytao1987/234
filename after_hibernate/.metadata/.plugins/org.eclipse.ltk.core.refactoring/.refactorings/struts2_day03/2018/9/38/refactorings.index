@@ -1,0 +1,9 @@
+1537599891008	Extract local variable 'name'
+1537600556285	Extract local variable 'name'
+1537601786351	Extract local variable 'size'
+1537604731815	Rename package 'cn.itcast.c_shows'
+1537606369618	Copy compilation unit
+1537606381628	Rename type 'Demo1Action'
+1537606521957	Extract local variable 'vs'
+1537607604807	Copy compilation unit
+1537607616415	Rename type 'Demo2Action'

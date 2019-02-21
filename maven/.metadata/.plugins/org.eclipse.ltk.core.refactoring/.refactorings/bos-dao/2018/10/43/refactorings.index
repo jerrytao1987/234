@@ -1,0 +1,3 @@
+1540556655628	Extract local variable 'genericSuperclass'
+1540556763348	Extract local variable 'actualTypeArguments'
+1540616589703	Extract local variable 'list'

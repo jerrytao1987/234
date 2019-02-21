@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;strings&apos; from expression &apos;image.split(&quot;,&quot;)&apos;&#x0D;&#x0A;- Original project: &apos;e3-common&apos;&#x0D;&#x0A;- Variable name: &apos;strings&apos;&#x0D;&#x0A;- Destination method: &apos;cn.e3mall.common.pojo.SearchItem.getImages()&apos;&#x0D;&#x0A;- Variable expression: &apos;image.split(&quot;,&quot;)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;strings&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;cn.e3mall.common.pojo{SearchItem.java" name="strings" replace="true" selection="1155 0" stamp="1543674869469" version="1.0"/>
+</session>

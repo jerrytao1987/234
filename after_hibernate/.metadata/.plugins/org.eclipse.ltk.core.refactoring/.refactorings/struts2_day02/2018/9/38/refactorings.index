@@ -1,0 +1,29 @@
+1537156442105	Copy compilation unit
+1537157265627	Copy compilation unit
+1537160435036	Copy compilation unit
+1537514539439	Copy compilation unit
+1537514554720	Rename type 'Demo4Action'
+1537514597613	Copy file
+1537515604430	Extract local variable 'session'
+1537515895451	Extract local variable 'application'
+1537515939111	Extract local variable 'requestScope'
+1537516378350	Copy file
+1537516742574	Copy compilation unit
+1537517032601	Extract local variable 'request'
+1537517047428	Extract local variable 'session'
+1537517052049	Extract local variable 'response'
+1537517088589	Extract local variable 'servletContext'
+1537517480186	Copy compilation unit
+1537518800186	Copy compilation unit
+1537518836761	Move compilation unit
+1537518849983	Copy file
+1537518861520	Delete element
+1537519034232	Copy file
+1537521993442	Copy compilation unit
+1537522146616	Copy file
+1537522470135	Copy compilation unit
+1537536349457	Move file
+1537536364678	Copy compilation unit
+1537536476000	Move 'form2.jsp' to 'WebContent'
+1537598561178	Copy files
+1537604590752	Copy file

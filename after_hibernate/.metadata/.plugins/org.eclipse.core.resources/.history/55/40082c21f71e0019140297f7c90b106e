@@ -1,0 +1,36 @@
+package cn.itcast.test;
+
+import java.io.InputStream;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class FileAction extends ActionSupport {
+	private String filename;
+	private String contentType;
+	
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+	public String getContentType() {
+		return contentType;
+	}
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
+	}
+	public InputStream getDownloadFile(){
+		System.out.println(filename);
+		contentType = ServletActionContext.getServletContext().getMimeType(filename);
+		InputStream in = ServletActionContext.getServletContext().getResourceAsStream("/upload/"+filename);
+		System.out.println(in);
+		return in;
+	}
+	public String download() throws Exception {
+		return SUCCESS;
+	}
+	
+}

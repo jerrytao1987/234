@@ -1,0 +1,8 @@
+1533180123122	Copy compilation unit
+1533180310724	Extract local variable 'prepareStatement'
+1533183764392	Extract local variable 'executeQuery'
+1533185464584	Move file
+1533185608218	Rename resource 'properties'
+1533198909530	Extract local variable 'con'
+1533200535175	Delete element
+1533206066591	Copy folder

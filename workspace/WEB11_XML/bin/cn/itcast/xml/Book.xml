@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hello version="1">
+	大家好！
+	<c>&lt;</c>
+	<b>
+		<![CDATA[
+			if(a>b){
+				if......
+			}
+		]]>
+	</b>
+</hello>

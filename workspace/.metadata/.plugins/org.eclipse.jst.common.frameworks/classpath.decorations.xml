@@ -1,0 +1,12 @@
+<classpath>
+  <container id="WEB20!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/workspace/WEB20/WebContent/WEB-INF/lib/commons-dbutils-1.4.jar">
+      <source-attachment-path>E:/jerry/文件/commons-dbutils-1.6-bin/commons-dbutils-1.6/commons-dbutils-1.6-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="WEB32!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/workspace/WEB32/WebContent/WEB-INF/lib/commons-fileupload-1.2.1.jar">
+      <source-attachment-path>E:/jerry/文件/文件上传/commons-fileupload-1.2.1/commons-fileupload-1.2.1-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

@@ -1,0 +1,41 @@
+1540718408074	Extract local variable 'superClass'
+1540718434297	Extract local variable 'actualTypeArguments'
+1540718727998	Extract local variable 'validateCode'
+1540719242695	Extract local variable 'user'
+1540782555081	Copy file
+1540783414655	Copy file
+1540784402649	Extract local variable 'user'
+1540785510558	Extract local variable 'proxy'
+1540785524372	Extract local variable 'actionName'
+1540785541175	Extract local variable 'namespace'
+1540787472103	Extract local variable 'user'
+1540801983475	Delete element
+1540804236908	Copy file
+1540866695467	Extract local variable 'detachedCriteria'
+1540866995919	Extract local variable 'json'
+1540872531598	Copy file
+1540891009092	Extract local variable 'sheetAt'
+1540891121999	Extract local variable 'v1'
+1540891700491	Extract local variable 'sheet'
+1540891782875	Extract local variable 'rowNum'
+1540891875426	Extract local variable 'stringCellValue'
+1540891942653	Extract local variable 'id'
+1540902284319	Extract local variable 'headByString'
+1540902375852	Extract local variable 'shortcode'
+1540902473241	Extract local variable 'citycode'
+1540903678490	Extract local variable 'string'
+1540953202678	Copy file
+1540953744031	Copy file
+1540976431301	Extract local variable 'dc'
+1540976442997	Extract local variable 'addresskey'
+1540976455361	Extract local variable 'region'
+1540976485677	Extract local variable 'province'
+1540976496322	Extract local variable 'city'
+1540976505421	Extract local variable 'district'
+1540978837822	Extract local variable 'sheet'
+1540978878758	Extract local variable 'headRow'
+1540979204212	Extract local variable 'dataRow'
+1540979509354	Extract local variable 'out'
+1540987215867	Extract local variable 'contentType'
+1540987746236	Extract local variable 'agent'
+1540987850863	Extract local variable 'encodeDownloadFilename'

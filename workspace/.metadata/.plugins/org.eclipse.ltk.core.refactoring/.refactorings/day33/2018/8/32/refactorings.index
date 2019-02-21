@@ -1,0 +1,23 @@
+1533556301176	Move compilation unit
+1533556836294	Extract local variable 'c2'
+1533557133902	Extract local variable 'c'
+1533557201646	Extract local variable 'constructors'
+1533557634236	Extract local variable 'cons'
+1533557744622	Extract local variable 'obj'
+1533558233477	Extract local variable 'con'
+1533558309900	Extract local variable 'obj'
+1533558498844	Extract local variable 'obj'
+1533558705107	Extract local variable 'cons'
+1533558842071	Extract local variable 'obj'
+1533558887203	Extract local variable 'obj1'
+1533559163491	Move compilation unit
+1533559167585	Delete element
+1533559319767	Extract local variable 'fields'
+1533559440956	Extract local variable 'field'
+1533559675010	Extract local variable 'methods'
+1533559940834	Extract local variable 'method'
+1533560051953	Extract local variable 'invoke'
+1533560415603	Extract local variable 'method'
+1533560804447	Extract local variable 'method'
+1533561974639	Extract local variable 'obj'
+1533562009268	Extract local variable 'method'

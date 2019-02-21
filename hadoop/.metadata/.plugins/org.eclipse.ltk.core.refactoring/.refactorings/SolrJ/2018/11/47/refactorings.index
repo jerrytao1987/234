@@ -1,0 +1,7 @@
+1542509569128	Extract local variable 'query'
+1542509618379	Extract local variable 'docs'
+1542509642743	Extract local variable 'numFound'
+1542510898635	Extract local variable 'highlighting'
+1542511030839	Extract local variable 'map'
+1542511066424	Extract local variable 'list'
+1542512177534	Copy files

@@ -1,0 +1,42 @@
+package com.itheima.bos.web.action;
+
+import javax.annotation.Resource;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.struts2.ServletActionContext;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
+
+import com.itheima.bos.entity.User;
+import com.itheima.bos.service.IUserService;
+import com.itheima.bos.web.action.base.BaseAction;
+
+@Controller
+@Scope("prototype")
+public class UserAction extends BaseAction<User> {
+	private String checkcode;
+
+	public void setCheckcode(String checkcode) {
+		this.checkcode = checkcode;
+	}
+	@Resource(name="userServiceImpl")
+	private IUserService userService;
+	
+	public String login() throws Exception {
+		String validateCode = (String) ServletActionContext.getRequest().getSession().getAttribute("key");
+		if(StringUtils.isNotBlank(checkcode) && checkcode.equals(validateCode)){
+			User user = userService.login(model);
+			if(user!=null){
+				ServletActionContext.getRequest().getSession().setAttribute("loginUser", user);
+				return SUCCESS;
+			}else{
+				this.addActionError("用户名或者密码输入错误！");
+				return LOGIN;
+			}
+		}else{
+			this.addActionError("输入的验证码错误！");
+			return LOGIN;
+		}
+	}
+	
+}

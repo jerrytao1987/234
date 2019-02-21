@@ -1,0 +1,10 @@
+1535504635173	Extract local variable 'servletContext'
+1535504662081	Extract local variable 'source'
+1535509059074	Extract local variable 'servletContext'
+1535509705562	Extract local variable 'session'
+1535510548786	Copy compilation unit
+1535510814539	Extract local variable 'session'
+1535511156682	Extract local variable 'session'
+1535511185284	Extract local variable 'customer'
+1535515099760	Extract local variable 'currentDate'
+1535515537438	Extract local variable 'customerList'

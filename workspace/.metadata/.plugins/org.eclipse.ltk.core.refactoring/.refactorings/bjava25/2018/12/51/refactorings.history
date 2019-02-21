@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;openConnection&apos; from expression &apos;url.openConnection()&apos;&#x0D;&#x0A;- Original project: &apos;bjava25&apos;&#x0D;&#x0A;- Variable name: &apos;openConnection&apos;&#x0D;&#x0A;- Destination method: &apos;bjava25.RegexTest2.getMails_1()&apos;&#x0D;&#x0A;- Variable expression: &apos;url.openConnection()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;openConnection&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;bjava25{RegexTest2.java" name="openConnection" replace="true" selection="414 0" stamp="1545400649168" version="1.0"/>
+</session>

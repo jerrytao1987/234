@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link0</name>
+			<type>2</type>
+			<location>E:/jerry/文件/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37/src</location>
+		</link>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>E:/jerry/文件/就业班/【阶段01】JavaWeb阶段/WEB08_MySQL&amp;JDBC回顾/资料/mysql-connector-java-5.1.39/mysql-connector-java-5.1.39</location>
+		</link>
+		<link>
+			<name>.link5</name>
+			<type>2</type>
+			<location>D:/apache-tomcat-7.0.52-src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

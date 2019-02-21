@@ -1,0 +1,74 @@
+<classpath>
+  <container id="struts2_day02!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/struts2_day02/WebContent/WEB-INF/lib/xwork-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/struts2_day02/WebContent/WEB-INF/lib/struts2-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</source-attachment-path>
+    </entry>
+  </container>
+  <container id="struts2_day04!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/struts2_day04/WebContent/WEB-INF/lib/xwork-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/strust2/struts-2.3.24-all.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/struts2_day04/WebContent/WEB-INF/lib/struts2-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</source-attachment-path>
+    </entry>
+  </container>
+  <container id="spring_day02!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/spring_day02/WebContent/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar">
+      <source-attachment-path>E:/jerry/文件/spring/spring-framework-4.2.4.RELEASE-dist/libs/spring-core-4.2.4.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="ssh_jar!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/ssh_jar/WebContent/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar">
+      <source-attachment-path>E:/jerry/文件/spring/spring-framework-4.2.4.RELEASE-dist/libs/spring-web-4.2.4.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="struts2_day03!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/struts2_day03/WebContent/WEB-INF/lib/struts2-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/struts2_day03/WebContent/WEB-INF/lib/xwork-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</source-attachment-path>
+    </entry>
+  </container>
+  <container id="ssh_crm!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/ssh_crm/WebContent/WEB-INF/lib/commons-lang3-3.2.jar">
+      <source-attachment-path>F:/BaiduYunDownload/commons-lang3-3.2-bin/commons-lang3-3.2-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/ssh_crm/WebContent/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar">
+      <source-attachment-path>E:/jerry/文件/spring/spring-framework-4.2.4.RELEASE-dist/libs/spring-web-4.2.4.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/ssh_crm/WebContent/WEB-INF/lib/struts2-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/strust2/struts-2.3.24-all.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/ssh_crm/WebContent/WEB-INF/lib/xwork-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/strust2/struts-2.3.24-all.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/ssh_crm/WebContent/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/spring/spring-framework-4.2.4.RELEASE-dist/libs/spring-orm-4.2.4.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="struts_crm!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/struts_crm/WebContent/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar">
+      <source-attachment-path>E:/jerry/文件/spring/spring-framework-4.2.4.RELEASE-dist/libs/spring-web-4.2.4.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="struts2_day01!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/struts2_day01/WebContent/WEB-INF/lib/struts2-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/strust2/struts-2.3.24-all.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/struts2_day01/WebContent/WEB-INF/lib/xwork-core-2.3.24.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</source-attachment-path>
+    </entry>
+  </container>
+  <container id="ssh_easyUI!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/234/after_hibernate/ssh_easyUI/WebContent/WEB-INF/lib/gson-2.2.4.jar">
+      <source-attachment-path>E:/jerry/文件/json解析/GSON完整包/gson-2.2.4-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/234/after_hibernate/ssh_easyUI/WebContent/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar">
+      <source-attachment-path>E:/jerry/文件/java相关软件和扩展/jar包/spring/spring-framework-4.2.4.RELEASE-dist/libs/spring-orm-4.2.4.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

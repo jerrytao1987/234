@@ -1,0 +1,19 @@
+1541304262999	Copy file
+1541409737866	Extract local variable 'user'
+1541410480492	Extract local variable 'string'
+1541410495486	Extract local variable 'message'
+1541410943319	Extract local variable 'stackTrace'
+1541410964936	Extract local variable 'className'
+1541475589341	Extract local variable 'page'
+1541559617950	Copy file
+1541559646374	Rename resource 'role_update.jsp'
+1541588617739	Extract local variable 'id'
+1541593037092	Extract local variable 'id'
+1541664016609	Copy file
+1541681704207	Copy file
+1541681923371	Delete elements
+1541681928855	Move 'highcharts' to 'js'
+1541685146998	Delete elements
+1541685215109	Delete element
+1541685843104	Copy file
+1541685853128	Rename resource '11-highcharts_2.jsp'

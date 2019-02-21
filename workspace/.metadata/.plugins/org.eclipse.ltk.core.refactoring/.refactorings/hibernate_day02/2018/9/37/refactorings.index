@@ -1,0 +1,21 @@
+1536634546357	Extract local variable 'openSession'
+1536634585261	Extract local variable 'tc'
+1536635851489	Copy compilation unit
+1536639631383	Copy compilation unit
+1536640711807	Extract local variable 'c1'
+1536652799560	Copy compilation unit
+1536653515651	Copy compilation unit
+1536653716860	Extract local variable 'query'
+1536653809643	Extract local variable 'list'
+1536654102463	Extract local variable 'c'
+1536654734534	Extract local variable 'list'
+1536654911337	Rename package 'cn.itcast.d_hql'
+1536654938623	Copy compilation unit
+1536655080212	Extract local variable 'list'
+1536655137023	Extract local variable 'criter'
+1536655737249	Extract local variable 'list'
+1536655889199	Extract local variable 'count'
+1536656322537	Copy compilation unit
+1536656415000	Extract local variable 'query'
+1536656440214	Extract local variable 'list'
+1536657224257	Extract local variable 'c'

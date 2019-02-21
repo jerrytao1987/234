@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="trunk" key="DirectorySelectionPage.lastParent_https://dengting-pc:8443/svn/bos32"/>
+	<item value="497" key="ChooseUrlDialog.size.x"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="376" key="ChooseUrlDialog.size.y"/>
+	<item value="0" key="CommitDialog.location.y"/>
+	<item value="0" key="CommitDialog.location.x"/>
+	<item value="https://dengting-pc:8443/svn/bos32" key="RepositorySelectionPage.lastRepository"/>
+	<item value="435" key="ChooseUrlDialog.location.x"/>
+	<item value="60" key="ChooseUrlDialog.location.y"/>
+	<item value="1366" key="CommitDialog.size.x"/>
+	<item value="728" key="CommitDialog.size.y"/>
+	<section name="CommitWizard">
+		<item value="false" key="ShowCompare"/>
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="svn://192.168.0.104:3690/bos"/>
+			<item value="svn://dengting-pc/bos"/>
+			<item value="svn://dengting-pc:3690/bos"/>
+			<item value="https://dengting-pc:3690/bos"/>
+			<item value="https://dengting-pc:3690/svn/bos"/>
+		</list>
+	</section>
+</section>

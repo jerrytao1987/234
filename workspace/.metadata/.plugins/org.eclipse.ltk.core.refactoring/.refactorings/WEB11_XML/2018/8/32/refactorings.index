@@ -1,0 +1,24 @@
+1533970762476	Delete element
+1533972832223	Move files
+1533988779196	Extract local variable 'doc'
+1533988814292	Extract local variable 'rootElement'
+1533989062692	Extract local variable 'elements'
+1533989291293	Extract local variable 'servletName'
+1533989343619	Extract local variable 'servletClass'
+1533991696813	Extract local variable 'forName'
+1533991737942	Extract local variable 'my'
+1533992219776	Delete element
+1533992231763	Copy compilation unit
+1533992238977	Move compilation unit
+1533992255360	Copy file
+1533992337434	Rename type 'IMyServlet1'
+1533992462510	Copy compilation unit
+1533992483321	Copy compilation unit
+1533992639566	Copy compilation unit
+1533992778623	Extract local variable 'doc'
+1533992802354	Extract local variable 'rootElement'
+1533992844496	Extract local variable 'element'
+1533992904922	Extract local variable 'sevletClass'
+1533992976892	Extract local variable 'servletClass'
+1533993030553	Extract local variable 'clazz'
+1533993106473	Extract local variable 'my'

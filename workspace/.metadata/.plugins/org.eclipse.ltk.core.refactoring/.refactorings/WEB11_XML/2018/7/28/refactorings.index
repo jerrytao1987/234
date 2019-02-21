@@ -1,0 +1,15 @@
+1531142101641	Move files
+1531145569856	Extract local variable 'doc'
+1531145656435	Extract local variable 'rootElement'
+1531145935295	Extract local variable 'childElements'
+1531146127594	Extract local variable 'servletName'
+1531214595465	Extract local variable 'my'
+1531218357989	Copy file
+1531225169511	Copy compilation unit
+1531225573160	Move compilation unit
+1531225679992	Extract local variable 'saxReader'
+1531225793796	Extract local variable 'document'
+1531225836388	Extract local variable 'rootElement'
+1531225927215	Extract local variable 'servletElement'
+1531226054185	Extract local variable 'servletClass'
+1531226263830	Extract local variable 'MyServlet1'

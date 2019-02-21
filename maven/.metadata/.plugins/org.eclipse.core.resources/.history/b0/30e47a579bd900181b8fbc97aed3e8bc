@@ -1,0 +1,18 @@
+package com.itheima.bos.web.action;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
+
+import com.itheima.bos.entity.User;
+import com.itheima.bos.web.action.base.BaseAction;
+
+@Controller
+@Scope("prototype")
+public class UserAction extends BaseAction<User> {
+
+	public String login() throws Exception {
+		// TODO Auto-generated method stub
+		return LOGIN;
+	}
+	
+}

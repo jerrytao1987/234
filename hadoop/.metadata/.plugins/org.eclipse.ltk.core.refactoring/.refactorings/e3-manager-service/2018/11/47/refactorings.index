@@ -1,0 +1,10 @@
+1542635807872	Extract local variable 'tbItem'
+1542635881732	Extract local variable 'criteria'
+1542635962462	Extract local variable 'list'
+1542689321336	Delete element
+1542689920877	Delete element
+1542804822161	Extract local variable 'itemMapper'
+1542804931207	Extract local variable 'list'
+1542805620496	Extract local variable 'list'
+1542894457864	Extract local variable 'createCriteria'
+1542894534957	Extract local variable 'list'

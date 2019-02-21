@@ -1,0 +1,8 @@
+1541084458688	Extract local variable 'id'
+1541084470129	Extract local variable 'name'
+1541084503549	Extract local variable 'station'
+1541084523043	Extract local variable 'telephone'
+1541084543237	Extract local variable 'address'
+1541084566177	Extract local variable 'decidedzone_id'
+1541084643771	Extract local variable 'list'
+1541254992961	Extract local variable 'decidedzoneId'

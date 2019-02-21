@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" uri="file:///E:/jerry/文件/笔记汇总/就业班/【阶段05】Hibernate/hibernate-day01/resource/dtd/hibernate-mapping-3.0.dtd"/>
+  <uri name="http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" uri="file:///E:/jerry/文件/笔记汇总/就业班/【阶段05】Hibernate/hibernate-day01/resource/dtd/hibernate-configuration-3.0.dtd"/>
+  <uri name="http://struts.apache.org/dtds/struts-2.3.dtd" uri="file:///E:/jerry/文件/java相关软件和扩展/jar包/strust2/dtd/struts-2.3.dtd"/>
+  <system systemId="http://www.springframework.org/schema/aop/spring-aop-4.2.xsd" uri="file:///E:/jerry/文件/java相关软件和扩展/jar包/spring/spring-framework-4.2.4.RELEASE-dist/schema/aop/spring-aop-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans-4.2.xsd" uri="file:///E:/jerry/文件/java相关软件和扩展/jar包/spring/spring-framework-4.2.4.RELEASE-dist/schema/beans/spring-beans-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context/spring-context-4.2.xsd" uri="file:///E:/jerry/文件/java相关软件和扩展/jar包/spring/spring-framework-4.2.4.RELEASE-dist/schema/context/spring-context-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tx/spring-tx-4.2.xsd" uri="file:///E:/jerry/文件/java相关软件和扩展/jar包/spring/spring-framework-4.2.4.RELEASE-dist/schema/tx/spring-tx-4.2.xsd"/>
+</catalog>

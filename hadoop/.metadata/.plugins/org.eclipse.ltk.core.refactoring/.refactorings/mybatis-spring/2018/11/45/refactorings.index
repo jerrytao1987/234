@@ -1,0 +1,5 @@
+1541858142989	Delete element
+1541861111443	Extract local variable 'classPathXmlApplicationContext'
+1541861165254	Extract local variable 'userMapper'
+1541861359008	Extract local variable 'user'
+1541861758985	Extract local variable 'userMapper'

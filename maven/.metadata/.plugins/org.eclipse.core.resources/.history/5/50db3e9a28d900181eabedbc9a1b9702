@@ -1,0 +1,5 @@
+package com.itheima.bos.web.action;
+
+public class UserAction extends BaseAction {
+
+}

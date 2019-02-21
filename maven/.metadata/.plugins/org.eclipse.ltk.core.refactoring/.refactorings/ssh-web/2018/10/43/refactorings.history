@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ssh-web/src/main/resources/applicationContext.xml&apos; to &apos;applicationContext-action.xml&apos;" description="Rename resource &apos;applicationContext.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/applicationContext.xml" name="applicationContext-action.xml" stamp="1540378645097" updateReferences="true"/>
+</session>

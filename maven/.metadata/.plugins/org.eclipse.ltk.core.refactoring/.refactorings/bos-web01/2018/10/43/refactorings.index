@@ -1,0 +1,7 @@
+1540523945433	Copy file
+1540557469323	Extract local variable 'genericSuperclass'
+1540557520846	Extract local variable 'actualTypeArguments'
+1540558675857	Extract local variable 'newInstance'
+1540563428893	Move compilation unit
+1540611828195	Extract local variable 'attribute'
+1540629195456	Delete element

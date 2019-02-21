@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+D:\234\hadoop\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+326501338.index
+2719554369.index
+1506512292.index
+1001573156.index
+3135261084.index
+4073041949.index

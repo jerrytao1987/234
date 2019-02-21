@@ -1,0 +1,7 @@
+BranchProjectTracker__D\:\\234\\template\\test-git\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="master"/>
+BranchProjectTracker__D\:\\234\\template\\test-git\\.git_v1.1=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="v1.1"/>
+BranchProjectTracker__D\:\\testgit\\test-git\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="master">\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__D\:\\testgit\\test-git\\.git_v1.1=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="v1.1">\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__D\:\\testgit\\test-git\\.git_v1.2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="v1.2">\r\n<project>/</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\u5408\u5E76\u5206\u652Fv1.2&\#x0A;</message>\r\n<message>\u589E\u52A06</message>\r\n<message>\u5220\u63895\u65393\u4E3A4</message>\r\n<message>Merge branch &apos;v1.1&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;src/test/Test.java&\#x0A;</message>\r\n<message>6\u6539\u62108</message>\r\n<message>2\u6539\u62104</message>\r\n<message>4\u6539\u62106</message>\r\n<message>3\u6539\u62104</message>\r\n<message>\u6539\u53D84\u4E3A5</message>\r\n<message>\u5408\u5E76&\#x0A;</message>\r\n</messages>
+eclipse.preferences.version=1

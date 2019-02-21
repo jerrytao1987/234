@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="D:/apache-tomcat-7.0.52/lib/catalina.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="E:/jerry/文件/java相关软件和扩展/软件/web/apache-tomcat-7.0.52-src.zip"/>
+  <source-attachment entry="D:/apache-tomcat-7.0.52/lib/jasper.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="D:/apache-tomcat-7.0.52-src"/>
+  <source-attachment entry="D:/apache-tomcat-7.0.52/lib/servlet-api.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="D:/apache-tomcat-7.0.52-src"/>
+</classpath>

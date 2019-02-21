@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <!-- 默认配置，如果没有指定则使用这个配置 -->
+  <default-config>
+  	<!-- 连接数据库的4项基本参数 -->
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="jdbcUrl">jdbc:mysql:///web08?useSSL=false</property>
+	<property name="user">root</property>
+	<property name="password">123456</property>
+	<!-- 初始化连接数 -->
+	<property name="initialPoolSize">5</property>
+	<!-- 最大连接数 -->
+	<property name="maxPoolSize">20</property>
+  </default-config>
+  <!-- 命名的配置 -->
+  <named-config name="mysql"> 
+  	<!-- 连接数据库的4项基本参数 -->
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="jdbcUrl">jdbc:mysql:///web08?useSSL=false</property>
+	<property name="user">root</property>
+	<property name="password">123456</property>
+  </named-config>
+  
+
+</c3p0-config>

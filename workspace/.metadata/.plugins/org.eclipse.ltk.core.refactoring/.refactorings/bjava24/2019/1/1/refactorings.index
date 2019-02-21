@@ -1,0 +1,5 @@
+1546309497445	Extract local variable 'url'
+1546309554679	Extract local variable 'openConnection'
+1546309922521	Extract local variable 'in'
+1546310735199	Extract local variable 'url'
+1546313246895	Extract local variable 'conn'

@@ -1,0 +1,12 @@
+package test;
+
+public class Test {
+	public static void main(String[] args) {
+<<<<<<< HEAD
+		System.out.println("hello3");
+		System.out.println("hello1");
+=======
+		System.out.println("hello2");
+>>>>>>> refs/heads/v1.1
+	}
+}

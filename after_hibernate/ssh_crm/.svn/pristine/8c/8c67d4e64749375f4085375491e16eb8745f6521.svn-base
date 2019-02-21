@@ -1,0 +1,15 @@
+package cn.itcast.dao;
+
+import java.util.List;
+
+import org.hibernate.criterion.DetachedCriteria;
+
+import cn.itcast.domain.Customer;
+
+public interface CustomerDao {
+
+	int getTotalCount(DetachedCriteria dc);
+
+	List<Customer> getPageList(DetachedCriteria dc, int start, Integer pageSize);
+
+}

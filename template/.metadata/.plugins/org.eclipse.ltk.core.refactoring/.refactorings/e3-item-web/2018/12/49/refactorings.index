@@ -1,0 +1,22 @@
+1543913306533	Extract local variable 'image2'
+1543913364871	Extract local variable 'strings'
+1543914469556	Extract local variable 'tbItem'
+1543914521461	Extract local variable 'result'
+1543930548241	Extract local variable 'template'
+1543932594267	Copy file
+1543974082266	Extract local variable 'configuration'
+1543974222386	Extract local variable 'template'
+1543975423886	Copy elements
+1543975440196	Rename resource 'item.jsp'
+1543975573964	Rename resource 'header.jsp'
+1543975631406	Rename resource 'shortcut.jsp'
+1543975729663	Rename resource 'mainmenu.jsp'
+1543976202064	Rename resource 'footer.jsp'
+1543976689445	Extract local variable 'text'
+1543976813605	Extract local variable 'tbItem'
+1543976830886	Extract local variable 'item'
+1543976880946	Extract local variable 'result'
+1543976910621	Extract local variable 'itemDesc'
+1543977217362	Extract local variable 'configuration'
+1543977243798	Extract local variable 'template'
+1544063704511	Copy folders

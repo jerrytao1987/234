@@ -1,0 +1,13 @@
+1548167436724	Delete element
+1548217307224	Extract local variable 'query'
+1548228356232	Extract local variable 'parameters'
+1548228684018	Extract local variable 'entrySet'
+1548228724101	Extract local variable 'iterator'
+1548228768875	Extract local variable 'entry'
+1548229324379	Extract local variable 'header'
+1548229502067	Extract local variable 'keySet'
+1548229557120	Extract local variable 'it'
+1548229607369	Extract local variable 'object'
+1548229714118	Extract local variable 'next'
+1548237132316	Copy folder
+1548237140385	Delete element

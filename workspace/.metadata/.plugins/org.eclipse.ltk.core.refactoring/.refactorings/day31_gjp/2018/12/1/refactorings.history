@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;day31_gjp&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     commons-dbutils-1.6.jar&#x0D;&#x0A;     commons-dbcp-1.4.jar&#x0D;&#x0A;     commons-pool-1.5.6.jar&#x0D;&#x0A;     mysql-connector-java-5.1.37-bin.jar" description="Copy files" element1="lib/commons-dbutils-1.6.jar" element2="lib/commons-dbcp-1.4.jar" element3="lib/commons-pool-1.5.6.jar" element4="lib/mysql-connector-java-5.1.37-bin.jar" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1546150767670" target="/day31_gjp2/lib" units="0" version="1.0"/>
+</session>

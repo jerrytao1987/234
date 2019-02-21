@@ -1,0 +1,22 @@
+1534736285179	Extract local variable 'servletName'
+1534736367953	Extract local variable 'initParameter'
+1534736419952	Extract local variable 'servletContext'
+1534736902871	Rename type 'QuickStratServlet'
+1534749244368	Extract local variable 'parameter'
+1534750249371	Extract local variable 'user'
+1534751866503	Extract local variable 'servletContext'
+1534752245311	Extract local variable 'initParameter'
+1534752590968	Copy file
+1534752603169	Rename resource 'a.txt'
+1534752650266	Copy file
+1534752658220	Rename resource 'a.txt'
+1534752665966	Copy file
+1534752672581	Rename resource 'a.txt'
+1534752825363	Extract local variable 'realPath_A'
+1534753787586	Extract local variable 'path'
+1534754412711	Extract local variable 'obj'
+1534754999617	Extract local variable 'count'
+1534847581606	Copy file
+1534937626838	Copy files
+1534937649086	Copy package
+1534939392908	Copy file

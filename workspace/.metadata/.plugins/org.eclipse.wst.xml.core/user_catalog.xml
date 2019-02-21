@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" uri="file:///E:/jerry/文件/笔记汇总/就业班/【阶段05】Hibernate/hibernate-day01/resource/dtd/hibernate-mapping-3.0.dtd"/>
+  <uri name="http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" uri="file:///E:/jerry/文件/笔记汇总/就业班/【阶段05】Hibernate/hibernate-day01/resource/dtd/hibernate-configuration-3.0.dtd"/>
+</catalog>

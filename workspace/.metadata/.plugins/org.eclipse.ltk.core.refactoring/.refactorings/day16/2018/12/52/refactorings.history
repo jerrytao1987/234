@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;i&apos; from expression &apos;c.get(Calendar.WEEK_OF_MONTH)&apos;&#x0D;&#x0A;- Original project: &apos;day16&apos;&#x0D;&#x0A;- Variable name: &apos;i&apos;&#x0D;&#x0A;- Destination method: &apos;cn.itcast.demo03.CalendarDemo1.function()&apos;&#x0D;&#x0A;- Variable expression: &apos;c.get(Calendar.WEEK_OF_MONTH)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;i&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;cn.itcast.demo03{CalendarDemo1.java" name="i" replace="true" selection="1188 0" stamp="1545799731721" version="1.0"/>
+</session>

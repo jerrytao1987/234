@@ -1,0 +1,18 @@
+1536898470251	Extract local variable 'session'
+1536898486919	Extract local variable 'tx'
+1536898625193	Extract local variable 'query'
+1536898637516	Extract local variable 'list'
+1536899904800	Extract local variable 'uniqueResult'
+1536900308538	Extract local variable 'list'
+1536911409487	Copy compilation unit
+1536913054352	Copy compilation unit
+1536913091393	Extract local variable 'c'
+1536913103518	Extract local variable 'list'
+1536913710748	Rename type 'Demo2'
+1536914068648	Copy compilation unit
+1536914261696	Extract local variable 'c'
+1536914273515	Extract local variable 'list'
+1536914435569	Copy compilation unit
+1536914470299	Extract local variable 'c'
+1536916749854	Copy compilation unit
+1536916801087	Extract local variable 'linkMen'

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;cn.itcast.utils&apos; to &apos;hibernate_day03/src&apos;&#x0D;&#x0A;- Original project: &apos;hibernate_day02&apos;&#x0D;&#x0A;- Destination element: &apos;hibernate_day03/src&apos;&#x0D;&#x0A;- Original element: &apos;hibernate_day02/src/cn.itcast.utils&apos;" description="Copy package" destination="=hibernate_day03/src" element1="/src&lt;cn.itcast.utils" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1536724733324" version="1.0"/>
+</session>

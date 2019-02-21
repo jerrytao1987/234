@@ -1,0 +1,6 @@
+Student [name=lisi, ma=90, cn=90, en=90]	270
+Student [name=suanba, ma=60, cn=60, en=60]	180
+Student [name=zhouqi, ma=50, cn=50, en=50]	150
+Student [name=zhangsan, ma=40, cn=20, en=90]	150
+Student [name=zhaoliu, ma=30, cn=40, en=60]	130
+Student [name=wangwu, ma=10, cn=20, en=10]	40

@@ -1,0 +1,1 @@
+127.0.0.1 - - [22/Oct/2018:21:32:37 +0800] "GET /CustomerAction?custId=1 HTTP/1.1" 200 281 http-bio-8080-exec-1 1045

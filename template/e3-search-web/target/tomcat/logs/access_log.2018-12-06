@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:15:39:25 +0800] "GET /search.html?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC HTTP/1.1" 200 23503 http-bio-8086-exec-1 9853
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:15:39:37 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8086-exec-3 5
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:15:43:17 +0800] "GET /search.html?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC HTTP/1.1" 200 23503 http-bio-8086-exec-5 1075
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:15:43:26 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8086-exec-7 1
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:19:59:07 +0800] "GET /html/web/_public/_ajaxStaticMenu.html?v20140430 HTTP/1.1" 404 949 http-bio-8086-exec-9 214
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:20:12:55 +0800] "GET /search.html?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC HTTP/1.1" 200 23503 http-bio-8086-exec-1 4142
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:20:12:58 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8086-exec-3 10
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:20:13:08 +0800] "GET /search.html?keyword=iphone+xs HTTP/1.1" 200 86239 http-bio-8086-exec-3 1632
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:22:07:30 +0800] "GET /search.html?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC HTTP/1.1" 200 23503 http-bio-8086-exec-6 1092
+0:0:0:0:0:0:0:1 - - [06/Dec/2018:22:28:10 +0800] "GET /html/web/_public/_ajaxStaticMenu.html?v20140430 HTTP/1.1" 404 949 http-bio-8086-exec-8 6

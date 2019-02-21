@@ -1,0 +1,32 @@
+1535256607188	Extract local variable 'productList'
+1535268537274	Extract local variable 'parameterMap'
+1535287607387	Extract local variable 'pid'
+1535293333915	Extract local variable 'parameterValues'
+1535295251770	Extract local variable 'row'
+1535330717571	Extract local variable 'row'
+1535333637521	Extract local variable 'pid'
+1535333938968	Extract local variable 'product'
+1535333983839	Extract local variable 'product'
+1535334040841	Extract local variable 'product'
+1535340933888	Extract local variable 'categoryList'
+1535343108470	Extract local variable 'parameterMap'
+1535343278779	Extract local variable 'categoryList'
+1535344166757	Extract local variable 'productList'
+1535345406032	Rename compilation unit 'AdminSearcheProductListServlet.java'
+1535358229692	Extract local variable 'query'
+1535358574418	Extract local variable 'totalCount'
+1535359055497	Extract local variable 'productList'
+1535360306760	Extract local variable 'currentPageStr'
+1535430368722	Rename type 'UserSevice'
+1535430476922	Delete element
+1535430634233	Extract local variable 'query'
+1535444252364	Extract local variable 'word'
+1535444791609	Extract local variable 'fromObject'
+1535445307760	Extract local variable 'json'
+1535448073890	Extract local variable 'pname'
+1535515169308	Copy files
+1535515214979	Copy compilation unit
+1535515223642	Copy file
+1535548761320	Copy files
+1535548779450	Copy package
+1535548962354	Copy file

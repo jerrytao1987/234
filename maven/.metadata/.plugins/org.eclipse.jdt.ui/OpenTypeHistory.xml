@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=ssh/src\/main\/java&lt;cn.itcast.crm.dao{CustomerDao.java[CustomerDao" modifiers="513" timestamp="1540301527904"/>
+<typeInfo handle="=ssh/src\/main\/java&lt;cn.itcast.crm.service{CustomerService.java[CustomerService" modifiers="513" timestamp="1540301387770"/>
+<typeInfo handle="=bos-dao/src\/main\/java&lt;com.itheima.bos.dao{IUserDao.java[IUserDao" modifiers="513" timestamp="1541409086821"/>
+<typeInfo handle="=bos-dao/src\/main\/java&lt;com.itheima.bos.dao{IStaffDao.java[IStaffDao" modifiers="513" timestamp="1540802560303"/>
+<typeInfo handle="=bos-service/src\/main\/java&lt;com.itheima.bos.service{IRegionService.java[IRegionService" modifiers="513" timestamp="1540957570154"/>
+<typeInfo handle="=bos-service/src\/main\/java&lt;com.itheima.bos.service{ISubareaService.java[ISubareaService" modifiers="513" timestamp="1541687774870"/>
+<typeInfo handle="=cxf_service/src&lt;com.itheima.service{HelloService.java[HelloService" modifiers="513" timestamp="1541065829177"/>
+<typeInfo handle="=crm_heima32/src&lt;com.itheima.crm.service{ICustomerService.java[ICustomerService" modifiers="513" timestamp="1541254615819"/>
+<typeInfo handle="=crm_heima32/D:\/234\/maven\/crm_heima32\/WebContent\/WEB-INF\/lib\/spring-jdbc-3.2.0.RELEASE.jar&lt;org.springframework.jdbc.datasource(DriverManagerDataSource.class[DriverManagerDataSource" modifiers="33" timestamp="1541064492410"/>
+<typeInfo handle="=crm_heima32/D:\/234\/maven\/crm_heima32\/WebContent\/WEB-INF\/lib\/spring-jdbc-3.2.0.RELEASE.jar&lt;org.springframework.jdbc.datasource(DataSourceTransactionManager.class[DataSourceTransactionManager" modifiers="33" timestamp="1541064492410"/>
+<typeInfo handle="=crm_heima32/D:\/234\/maven\/crm_heima32\/WebContent\/WEB-INF\/lib\/spring-jdbc-3.2.0.RELEASE.jar&lt;org.springframework.jdbc.core(JdbcTemplate.class[JdbcTemplate" modifiers="33" timestamp="1541064492410"/>
+<typeInfo handle="=bos-service/src\/main\/java&lt;com.itheima.bos.service{INoticebillService.java[INoticebillService" modifiers="513" timestamp="1541299588706"/>
+<typeInfo handle="=bos-service/src\/main\/java&lt;com.itheima.bos.service{IWorkordermanageService.java[IWorkordermanageService" modifiers="513" timestamp="1541307710670"/>
+<typeInfo handle="=bos-service/src\/main\/java&lt;com.itheima.bos.service{IFunctionService.java[IFunctionService" modifiers="513" timestamp="1541647716673"/>
+<typeInfo handle="=bos-web/src\/main\/java&lt;com.itheima.bos.web.action.base{BaseAction.java[BaseAction" modifiers="1" timestamp="1540956948346"/>
+<typeInfo handle="=bos-service/src\/main\/java&lt;com.itheima.bos.service{IRoleService.java[IRoleService" modifiers="513" timestamp="1541561711002"/>
+<typeInfo handle="=bos-dao/src\/main\/java&lt;com.itheima.bos.dao.base{IBaseDao.java[IBaseDao" modifiers="513" timestamp="1540990713076"/>
+<typeInfo handle="=bos-dao/src\/main\/java&lt;com.itheima.bos.dao.impl{BaseDaoImpl.java[BaseDaoImpl" modifiers="1" timestamp="1540990781223"/>
+</typeInfoHistroy>

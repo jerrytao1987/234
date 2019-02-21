@@ -1,0 +1,11 @@
+12:27:28,048 FATAL Log4JTest:11 - 致命错误
+12:27:28,050 ERROR Log4JTest:12 - 普通错误
+12:27:28,051  WARN Log4JTest:13 - 警告信息
+12:27:28,051  INFO Log4JTest:14 - 普通信息
+12:27:28,051 DEBUG Log4JTest:15 - 调试信息
+12:29:08,535 FATAL Log4JTest:11 - 致命错误
+12:29:08,538 ERROR Log4JTest:12 - 普通错误
+12:29:08,538  WARN Log4JTest:13 - 警告信息
+12:29:08,538  INFO Log4JTest:14 - 普通信息
+12:29:08,538 DEBUG Log4JTest:15 - 调试信息
+12:29:08,538 TRACE Log4JTest:16 - 堆栈信息

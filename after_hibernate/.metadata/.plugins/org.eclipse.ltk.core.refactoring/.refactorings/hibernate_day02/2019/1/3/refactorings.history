@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;c2&apos; from expression &apos;session.get(Customer.class,8l)&apos;&#x0D;&#x0A;- Original project: &apos;hibernate_day02&apos;&#x0D;&#x0A;- Variable name: &apos;c2&apos;&#x0D;&#x0A;- Destination method: &apos;cn.itcast.b_state.Demo.fun1()&apos;&#x0D;&#x0A;- Variable expression: &apos;session.get(Customer.class,8l)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;c2&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;cn.itcast.b_state{Demo.java" name="c2" replace="true" selection="598 0" stamp="1547707949681" version="1.0"/>
+</session>

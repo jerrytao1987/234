@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;cn.e3mall.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1543202932933"/>
+<typeInfo handle="=e3-content-interface/src\/main\/java&lt;cn.e3mall.content.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1543471301657"/>
+<typeInfo handle="=e3-content-interface/src\/main\/java&lt;cn.e3mall.content.service{ContentService.java[ContentService" modifiers="513" timestamp="1543479534624"/>
+<typeInfo handle="=e3-search-interface/src\/main\/java&lt;cn.e3mall.search.service{SearchItemService.java[SearchItemService" modifiers="513" timestamp="1543644832269"/>
+<typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1543996018164"/>
+<typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{LoginService.java[LoginService" modifiers="513" timestamp="1543999069643"/>
+<typeInfo handle="=e3-cart-interface/src\/main\/java&lt;cn.e3mall.cart.service{CartService.java[CartService" modifiers="513" timestamp="1544103749747"/>
+<typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{TokenService.java[TokenService" modifiers="513" timestamp="1544019735359"/>
+<typeInfo handle="=e3-manager-pojo/src\/main\/java&lt;cn.e3mall.pojo{TbOrder.java[TbOrder" modifiers="1" timestamp="1542699012013"/>
+<typeInfo handle="=e3-order-interface/src\/main\/java&lt;cn.e3mall.order.service{OrderService.java[OrderService" modifiers="513" timestamp="1544100526219"/>
+<typeInfo handle="=e3-cart-service/D:\/apache-maven-3.3.9-bin\/repository\/org\/mybatis\/mybatis-spring\/1.2.2\/mybatis-spring-1.2.2.jar&lt;org.mybatis.spring.mapper(MapperScannerConfigurer.class[MapperScannerConfigurer" modifiers="33" timestamp="1550214055023"/>
+</typeInfoHistroy>

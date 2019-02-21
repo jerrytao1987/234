@@ -1,0 +1,5 @@
+1541767525298	Delete element
+1541767882010	Extract local variable 'conn'
+1541767968698	Extract local variable 'prepareStatement'
+1541768021573	Extract local variable 'rs'
+1541769340152	Copy file

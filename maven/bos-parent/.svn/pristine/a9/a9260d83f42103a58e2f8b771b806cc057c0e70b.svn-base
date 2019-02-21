@@ -1,0 +1,4 @@
+jdbc.driverClass=com.mysql.jdbc.Driver
+jdbc.jdbcUrl=jdbc:mysql:///bos32?useSSL=false
+jdbc.user=jerry
+jdbc.password=123456

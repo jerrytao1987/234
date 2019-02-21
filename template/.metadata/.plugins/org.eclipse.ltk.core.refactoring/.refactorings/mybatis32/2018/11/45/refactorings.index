@@ -1,0 +1,35 @@
+1541769783632	Move file
+1541771023241	Extract local variable 'in'
+1541771043587	Extract local variable 'sessionFactory'
+1541771136803	Extract local variable 'sqlSession'
+1541771797107	Extract local variable 'user'
+1541772611463	Extract local variable 'list'
+1541773379134	Extract local variable 'insert'
+1541815223724	Extract local variable 'sqlSession'
+1541815333728	Extract local variable 'user'
+1541816069331	Extract local variable 'userDao'
+1541816196309	Extract local variable 'user'
+1541817318759	Extract local variable 'userMapper'
+1541817387968	Extract local variable 'user'
+1541819348257	Copy file
+1541820406717	Move file
+1541820456396	Move file
+1541820460516	Copy file
+1541820474507	Rename resource 'User.xml'
+1541820483559	Delete element
+1541820492498	Copy file
+1541820503001	Rename resource 'User.xml'
+1541824699463	Extract local variable 'count'
+1541824867647	Copy file
+1541825252052	Extract local variable 'orderMapper'
+1541825270421	Extract local variable 'list'
+1541838670706	Extract local variable 'userMapper'
+1541838708359	Extract local variable 'userMapper'
+1541838782355	Extract local variable 'u'
+1541842123610	Extract local variable 'list'
+1541842245072	Extract local variable 'list'
+1541854417821	Copy compilation unit
+1541854543566	Extract local variable 'list'
+1541859479070	Copy file
+1541861256876	Copy compilation unit
+1541861273388	Copy compilation unit

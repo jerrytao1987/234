@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>客户信息管理</title>
+<link rel="stylesheet" type="text/css"
+	href="../ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../ui/themes/icon.css">
+<script type="text/javascript" src="../ui/jquery.min.js"></script>
+<script type="text/javascript" src="../ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../ui/locale/easyui-lang-zh_CN.js"></script>
+
+<script>
+	function submitForm() {
+		// submit the form    
+		$('#ff').submit();
+	};
+	$(function() {
+		$('#w').window('close');
+		$('#ff').form({
+			url : '${pageContext.request.contextPath}/UserAction_regist',
+			onSubmit : function() {
+				// do some check    
+				// return false to prevent submit;  
+				return true;
+			},
+			success : function(data) {
+				$('#w').window('close');
+				$('#test').datagrid('reload');
+				$('#ff').form('clear');
+			}
+		});
+
+		$('#test').datagrid({
+			title : '用户列表',
+			iconCls : 'icon-tip',
+			/* width:700,
+			height:350, */
+			singleSelect:true,
+			nowrap : true,
+			striped : true,
+			collapsible : true,
+			url : '${pageContext.request.contextPath}/UserAction_list',
+			sortName : 'user_id',
+			sortOrder : 'desc',
+			remoteSort : false,
+			idField : 'user_id',
+			frozenColumns : [ [ {
+				field : 'ck',
+				checkbox : true
+			}, {
+				title : '用户id',
+				field : 'user_id',
+				width : 80,
+				sortable : true
+			} ] ],
+			columns : [ [ {
+				field : 'user_name',
+				title : '用户名',
+				width : 120
+			}, {
+				field : 'user_code',
+				title : '登录名',
+				width : 220
+			} ] ],
+			pagination : true,
+			rownumbers : true,
+			toolbar : [ {
+				id : 'btnadd',
+				text : '添加用户',
+				iconCls : 'icon-add',
+				handler : function() {
+					$('#btnsave').linkbutton('enable');
+					$('#w').window('close');
+					$('#w').window('open');
+				}
+			}, {
+				id : 'btncut',
+				text : '修改用户',
+				iconCls : 'icon-cut',
+				handler : function() {
+					$('#btnsave').linkbutton('enable');
+					var user_id = getSelected();
+					if(!user_id){
+						alert("请选择用户");
+						return;
+					}
+					$('#ff').form('load','${pageContext.request.contextPath}/UserAction_toEdit?user_id='+user_id);
+					
+					$('#w').window('open');
+				}
+			}, '-', {
+				id : 'btnsave',
+				text : '删除用户',
+				disabled : false,
+				iconCls : 'icon-save',
+				handler : function() {
+					$('#btnsave').linkbutton('enable');
+					var user_id = getSelected();
+					if(!user_id){
+						alert("请选择用户");
+						return;
+					};
+					$.get("${pageContext.request.contextPath}/UserAction_delete?user_id="+user_id, function(data){
+							$('#test').datagrid('reload'); 
+						});
+					
+				}
+			} ]
+		});
+		var p = $('#test').datagrid('getPager');
+		$(p).pagination({
+			onBeforeRefresh : function() {
+				alert('before refresh');
+			}
+		});
+	});
+	function resize() {
+		$('#test').datagrid('resize', {
+			width : 700,
+			height : 400
+		});
+	}
+	function getSelected() {
+		var selected = $('#test').datagrid('getSelected');
+		if (selected) {
+			return selected.user_id;
+		}
+	}
+	function getSelections() {
+		var ids = [];
+		var rows = $('#test').datagrid('getSelections');
+		for (var i = 0; i < rows.length; i++) {
+			ids.push(rows[i].code);
+		}
+		alert(ids.join(':'));
+	}
+	function clearSelections() {
+		$('#test').datagrid('clearSelections');
+	}
+	function selectRow() {
+		$('#test').datagrid('selectRow', 2);
+	}
+	function selectRecord() {
+		$('#test').datagrid('selectRecord', '002');
+	}
+	function unselectRow() {
+		$('#test').datagrid('unselectRow', 2);
+	}
+	function mergeCells() {
+		$('#test').datagrid('mergeCells', {
+			index : 2,
+			field : 'addr',
+			rowspan : 2,
+			colspan : 2
+		});
+	}
+</script>
+</head>
+<body>
+	<table id="test"></table>
+	<div id="w" class="easyui-window" title="My Window" iconCls="icon-save"
+		style="width: 500px; height: 200px; padding: 5px;">
+		<form id="ff" method="post" novalidate>
+			<input type="hidden" name="user_id">
+			<div>
+				<label for="name">登录名称:</label> <input class="easyui-validatebox"
+					type="text" name="user_code" required="true"></input>
+			</div>
+			<div>
+				<label for="name">登录密码:</label> <input class="easyui-validatebox"
+					type="password" name="user_password" id="user_password" required="true"></input>
+			</div>
+			<div>
+				<label for="name">用户昵称:</label> <input class="easyui-validatebox"
+					type="text" name="user_name" required="true"></input>
+			</div>
+
+			<div>
+				<input type="button" value="提交" onclick="submitForm();">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

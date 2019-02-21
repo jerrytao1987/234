@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Product.java&apos; to &apos;WEB20/src/cn.itcast.domain&apos;&#x0D;&#x0A;- Original project: &apos;WEB17Product&apos;&#x0D;&#x0A;- Destination element: &apos;WEB20/src/cn.itcast.domain&apos;&#x0D;&#x0A;- Original element: &apos;cn.itcast.domain.Product.java&apos;" description="Copy compilation unit" destination="=WEB20/src&lt;cn.itcast.domain" element1="/src&lt;cn.itcast.domain{Product.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1535256007941" units="1" version="1.0"/>
+</session>

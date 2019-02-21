@@ -1,0 +1,8 @@
+1534775494885	Extract local variable 'writer'
+1534833545658	Extract local variable 'outputStream'
+1534833678778	Extract local variable 'realPath'
+1534835043030	Extract local variable 'filename'
+1534835184386	Extract local variable 'path'
+1534835251222	Extract local variable 'out'
+1535011852056	Copy package
+1535011873455	Copy file

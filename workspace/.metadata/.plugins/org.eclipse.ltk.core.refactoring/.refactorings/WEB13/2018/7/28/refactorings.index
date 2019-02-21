@@ -1,0 +1,8 @@
+1531296796137	Extract local variable 'servletContext'
+1531302937045	Rename type 'QuickStartServler'
+1531364887584	Delete element
+1531364972241	Delete element
+1531365001052	Delete element
+1531365305297	Extract local variable 'username'
+1531365748865	Delete element
+1531367246291	Extract local variable 'user'

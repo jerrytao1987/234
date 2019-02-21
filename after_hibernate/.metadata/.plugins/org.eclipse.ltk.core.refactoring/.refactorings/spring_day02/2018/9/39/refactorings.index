@@ -1,0 +1,14 @@
+1538101462612	Extract local variable 'u'
+1538185339728	Copy compilation unit
+1538188370201	Extract local variable 'invoke'
+1538188625293	Extract local variable 'usProxy'
+1538188895405	Copy compilation unit
+1538189442969	Extract local variable 'value'
+1538189579284	Extract local variable 'us'
+1538192350580	Extract local variable 'proceed'
+1538192698774	Copy file
+1538193101146	Move compilation unit
+1538193108727	Delete element
+1538194076993	Copy compilation unit
+1538209531999	Copy elements
+1538209952815	Copy compilation unit

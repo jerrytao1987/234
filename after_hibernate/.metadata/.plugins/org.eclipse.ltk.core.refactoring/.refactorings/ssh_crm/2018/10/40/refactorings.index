@@ -1,0 +1,44 @@
+1538362728342	Delete element
+1538364631612	Delete elements
+1538364757595	Delete element
+1538384567127	Rename package 'cn.itcast.bean'
+1538384643879	Delete element
+1538387165607	Copy file
+1538387173562	Delete element
+1538397206651	Extract local variable 'sf'
+1538397243578	Extract local variable 'session'
+1538397258886	Extract local variable 'tx'
+1538399124012	Delete element
+1538403161203	Extract local variable 'query'
+1538403225795	Extract local variable 'u'
+1538403266626	Extract local variable 'u'
+1538403482947	Extract local variable 'findByCriteria'
+1538403937910	Extract local variable 'u'
+1538445028877	Copy file
+1538446110743	Rename resource 'hibernate.cfg.xml'
+1538447839951	Extract local variable 'u'
+1538448069860	Extract local variable 'existU'
+1538453912697	Rename resource 'applicationContext.xml'
+1538454422568	Rename resource 'applicationContext2.xml'
+1538454534950	Rename resource 'applicationContext.xml'
+1538638573470	Delete elements
+1538638686314	Delete element
+1538644409915	Extract local variable 'request'
+1538644826553	Move compilation unit
+1538644833871	Delete element
+1538647312295	Extract local variable 'list'
+1538647473917	Extract local variable 'count'
+1538647667941	Extract local variable 'list'
+1538656361273	Rename resource 'list.jsp'
+1538656897408	Rename resource 'list.jsp'
+1538656908780	Rename resource 'list2.jsp'
+1538657756944	Delete element
+1538713484552	Extract local variable 't'
+1538713859754	Extract local variable 'genericSuperclass'
+1538714277784	Extract local variable 'type'
+1538714543402	Extract local variable 'list'
+1538714627887	Extract local variable 'count'
+1538714774847	Extract local variable 'list'
+1538746013762	Rename type 'baseDictService'
+1538746611452	Extract local variable 'dc'
+1538746707011	Extract local variable 'list'

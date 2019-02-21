@@ -1,0 +1,6 @@
+package cn.itcast.test;
+
+public class SVNTest {
+	private String name;
+	private Integer age;
+}

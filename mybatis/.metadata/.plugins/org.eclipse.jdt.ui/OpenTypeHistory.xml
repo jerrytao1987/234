@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=jdbc32/lib\/mysql-connector-java-5.1.7-bin.jar&lt;com.mysql.jdbc(Driver.class[Driver" modifiers="33" timestamp="1541767180182"/>
+<typeInfo handle="=mybatis-spring/lib\/commons-dbcp-1.2.2.jar&lt;org.apache.commons.dbcp(BasicDataSource.class[BasicDataSource" modifiers="33" timestamp="1541857969356"/>
+<typeInfo handle="=mybatis-spring/src&lt;com.itheima.mybatis.dao{UserDao.java[UserDao" modifiers="513" timestamp="1541860205797"/>
+<typeInfo handle="=mybatis-spring/lib\/mybatis-spring-1.2.2.jar&lt;org.mybatis.spring.mapper(MapperFactoryBean.class[MapperFactoryBean" modifiers="33" timestamp="1541857969510"/>
+<typeInfo handle="=mybatis-spring/lib\/mybatis-spring-1.2.2.jar&lt;org.mybatis.spring.mapper(MapperScannerConfigurer.class[MapperScannerConfigurer" modifiers="33" timestamp="1541857969510"/>
+<typeInfo handle="=springmvc-mybatis02/D:\/234\/mybatis\/springmvc-mybatis02\/WebContent\/WEB-INF\/lib\/spring-webmvc-4.1.3.RELEASE.jar&lt;org.springframework.web.servlet(HandlerExceptionResolver.class[HandlerExceptionResolver" modifiers="1537" timestamp="1541931162448"/>
+<typeInfo handle="=springmvc-mybatis02/D:\/234\/mybatis\/springmvc-mybatis02\/WebContent\/WEB-INF\/lib\/spring-web-4.1.3.RELEASE.jar&lt;org.springframework.web.multipart.commons(CommonsMultipartFile.class[CommonsMultipartFile" modifiers="33" timestamp="1541931162346"/>
+<typeInfo handle="=springmvc-mybatis02/D:\/234\/mybatis\/springmvc-mybatis02\/WebContent\/WEB-INF\/lib\/spring-web-4.1.3.RELEASE.jar&lt;org.springframework.web.multipart(MultipartResolver.class[MultipartResolver" modifiers="1537" timestamp="1541931162346"/>
+<typeInfo handle="=crm32/src&lt;com.itheima.crm.service{BaseDictService.java[BaseDictService" modifiers="513" timestamp="1542339149363"/>
+<typeInfo handle="=crm32/D:\/234\/mybatis\/crm32\/WebContent\/WEB-INF\/lib\/spring-core-4.1.3.RELEASE.jar&lt;org.springframework.util(Base64Utils$Base64Delegate.class[Base64Delegate" modifiers="1546" timestamp="1542115900097"/>
+<typeInfo handle="=crm32/src&lt;com.itheima.crm.service{CustomerService.java[CustomerService" modifiers="513" timestamp="1542354900134"/>
+<typeInfo handle="=jd/src&lt;com.itheima.jd.dao{JdDao.java[JdDao" modifiers="513" timestamp="1542597173771"/>
+<typeInfo handle="=jd/D:\/234\/mybatis\/jd\/WebContent\/WEB-INF\/lib\/spring-web-4.1.3.RELEASE.jar&lt;org.springframework.web.filter(CharacterEncodingFilter.class[CharacterEncodingFilter" modifiers="33" timestamp="1542512149814"/>
+</typeInfoHistroy>

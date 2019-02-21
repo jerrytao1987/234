@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Noticebill.hbm.xml, Workbill.hbm.xml, Workordermanage.hbm.xml&apos; to &apos;entity&apos;" description="Move 3 resources to &apos;entity&apos;" destination="src/main/resources/com/itheima/bos/entity" element1="src/main/java/com/itheima/bos/entity/Noticebill.hbm.xml" element2="src/main/java/com/itheima/bos/entity/Workbill.hbm.xml" element3="src/main/java/com/itheima/bos/entity/Workordermanage.hbm.xml" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="3" stamp="1541252595172" updateReferences="true"/>
+</session>

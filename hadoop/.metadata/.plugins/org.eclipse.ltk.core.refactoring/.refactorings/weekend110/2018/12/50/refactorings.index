@@ -1,0 +1,40 @@
+1544536580735	Extract local variable 'open'
+1544536745580	Extract local variable 'out'
+1544537303724	Move files
+1544537671806	Extract local variable 'dst'
+1544537722682	Extract local variable 'out'
+1544580869758	Move files
+1544581061933	Move files
+1544582222102	Extract local variable 'listFiles'
+1544582256585	Extract local variable 'next'
+1544582307396	Extract local variable 'name'
+1544582413376	Extract local variable 'listStatus'
+1544582488766	Extract local variable 'name'
+1544586828277	Extract local variable 'builder'
+1544586885675	Extract local variable 'build'
+1544587265271	Extract local variable 'proxy'
+1544587305206	Extract local variable 'login'
+1544602654433	Move files
+1544611724687	Extract local variable 'line'
+1544616423077	Extract local variable 'words'
+1544617376874	Extract local variable 'job'
+1544626222633	Delete elements
+1544670797121	Copy files
+1544670846100	Delete elements
+1544686706821	Extract local variable 'readUTF'
+1544686761233	Extract local variable 'up_flow'
+1544687178049	Extract local variable 'fields'
+1544688861456	Extract local variable 'res'
+1544689988872	Extract local variable 'line'
+1544690014359	Extract local variable 'fields'
+1544691505638	Extract local variable 'phoneNB'
+1544753086939	Delete element
+1544756240653	Extract local variable 'line'
+1544756275300	Extract local variable 'fields'
+1544756393955	Extract local variable 'inputSplit'
+1544756531225	Extract local variable 'path'
+1544756545046	Extract local variable 'name'
+1544757101237	Extract local variable 'output'
+1544758328397	Extract local variable 'wordAndFilename'
+1544759162164	Extract local variable 'length'
+1544760315839	Extract local variable 'one_result'

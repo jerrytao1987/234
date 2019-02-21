@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link0</name>
+			<type>2</type>
+			<location>E:/jerry/文件/java相关软件和扩展/jar包/strust2/struts-2.3.24-all/src</location>
+		</link>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>D:/apache-tomcat-7.0.52-src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

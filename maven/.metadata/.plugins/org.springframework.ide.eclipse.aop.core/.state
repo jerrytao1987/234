@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="bos-service"/>
+<aop-project name="ssh-web"/>
+<aop-project name="bos-dao"/>
+<aop-project name="bos-web"/>
+<aop-project name="bos-utils"/>
+<aop-project name="bos-entity"/>
+<aop-project name="ssh-service"/>
+<aop-project name="ssh-dao"/>
+<aop-project name="ssh"/>
+</aop-reference-model>

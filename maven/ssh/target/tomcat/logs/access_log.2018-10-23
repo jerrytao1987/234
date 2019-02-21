@@ -1,0 +1,2 @@
+127.0.0.1 - - [23/Oct/2018:12:35:04 +0800] "GET /CustomerAction?custId=1 HTTP/1.1" 200 281 http-bio-8080-exec-1 66344
+127.0.0.1 - - [23/Oct/2018:12:35:04 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 7

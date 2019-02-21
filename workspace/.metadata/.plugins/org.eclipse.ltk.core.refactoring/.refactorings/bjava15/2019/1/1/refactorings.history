@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;num&apos; from expression &apos;s1.getName().compareTo(s2.getName())&apos;&#x0D;&#x0A;- Original project: &apos;bjava15&apos;&#x0D;&#x0A;- Variable name: &apos;num&apos;&#x0D;&#x0A;- Destination method: &apos;bjava15.MyCompare.compare()&apos;&#x0D;&#x0A;- Variable expression: &apos;s1.getName().compareTo(s2.getName())&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;num&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;bjava15{TreeSetDemo2.java" name="num" replace="true" selection="1503 36" stamp="1546350531757" version="1.0"/>
+</session>

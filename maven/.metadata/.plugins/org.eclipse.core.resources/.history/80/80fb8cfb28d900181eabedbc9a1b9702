@@ -1,0 +1,8 @@
+package com.itheima.bos.web.action;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserAction extends BaseAction {
+
+}
