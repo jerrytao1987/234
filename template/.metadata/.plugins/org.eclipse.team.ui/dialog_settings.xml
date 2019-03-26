@@ -2,11 +2,21 @@
 <section name="Workbench">
 	<section name="SynchronizeViewSettings">
 		<item value="false" key="linkWithEditor"/>
-		<item value="1542637839113" key="lastactiveparticipant_sec_id"/>
-		<item value="org.tigris.subversion.subclipse.participant" key="lastactiveparticipant_id"/>
+		<item value="1550742956042" key="lastactiveparticipant_sec_id"/>
+		<item value="org.eclipse.egit.ui.modelCompareParticipant" key="lastactiveparticipant_id"/>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1550742858191">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1550742795333">
+		</section>
 		<section name="org.tigris.subversion.subclipse.participant.1542637839113">
 			<item value="org.eclipse.team.ui.modelprovider_compressedfolders" key="org.eclipse.team.ui.P_LAST_MODELPROVIDER"/>
 			<item value="false" key="org.eclipse.team.ui.P_COMMIT_SET_ENABLED"/>
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1550742956042">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1550741825034">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1550741942299">
 		</section>
 	</section>
 	<section name="ConfigureProjectWizard">

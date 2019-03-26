@@ -1,0 +1,30 @@
+package cn.itcast.privilegedemo.mapper;
+
+import cn.itcast.privilegedemo.pojo.TPrivilege;
+import cn.itcast.privilegedemo.pojo.TPrivilegeExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface TPrivilegeMapper {
+    long countByExample(TPrivilegeExample example);
+
+    int deleteByExample(TPrivilegeExample example);
+
+    int deleteByPrimaryKey(String id);
+
+    int insert(TPrivilege record);
+
+    int insertSelective(TPrivilege record);
+
+    List<TPrivilege> selectByExample(TPrivilegeExample example);
+
+    TPrivilege selectByPrimaryKey(String id);
+
+    int updateByExampleSelective(@Param("record") TPrivilege record, @Param("example") TPrivilegeExample example);
+
+    int updateByExample(@Param("record") TPrivilege record, @Param("example") TPrivilegeExample example);
+
+    int updateByPrimaryKeySelective(TPrivilege record);
+
+    int updateByPrimaryKey(TPrivilege record);
+}

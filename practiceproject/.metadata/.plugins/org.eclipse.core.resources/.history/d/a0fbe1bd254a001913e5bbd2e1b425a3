@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+	
+	
+	<!-- 配置一个shiro框架的过滤器工厂bean，用于创建shiro框架的过滤器 -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<!-- 注入安全管理器对象 -->
+		<property name="securityManager" ref="securityManager"/>
+		<!-- 注入登录页面访问URL -->
+		<property name="loginUrl" value="/toLogin.action"/>
+		<!-- 注入权限不足提供页面访问URL -->
+		<property name="unauthorizedUrl" value="/toUnauthorized"/>
+		<!-- 配置URL拦截规则 -->
+		<property name="filterChainDefinitions">
+			<value>
+				/css/**=anon
+				/js/**=anon
+				/images/**=anon
+				/toLogin.action=anon
+				/login.action=anon
+				/toUnauthorized=anon
+				<!-- /departmentList.action=perms["department-list"] -->
+				/**=authc
+			</value>
+		</property>
+	</bean>
+	<!-- 注册安全管理器 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<!-- 注入realm -->
+		<property name="realm" ref="myRealm"></property>
+	</bean>
+	<!-- 注册自定义realm -->
+	<bean id="myRealm" class="cn.itcast.privilegedemo.web.realm.MyRealm"></bean>
+	
+</beans>

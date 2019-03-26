@@ -13,8 +13,8 @@
 	<item value="trunk" key="DirectorySelectionPage.lastParent_https://dengting-pc:8443/svn/e3-JavaEE32"/>
 	<item value="https://dengting-pc:8443/svn/e3-JavaEE32" key="RepositorySelectionPage.lastRepository"/>
 	<item value="435" key="ChooseUrlDialog.location.x"/>
-	<item value="60" key="ChooseUrlDialog.location.y"/>
 	<item value="1366" key="CommitDialog.size.x"/>
+	<item value="60" key="ChooseUrlDialog.location.y"/>
 	<item value="728" key="CommitDialog.size.y"/>
 	<section name="CommitWizard">
 		<item value="false" key="ShowCompare"/>

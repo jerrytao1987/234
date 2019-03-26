@@ -1,0 +1,193 @@
+package cn.itcast.tooldemo.httpclient;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URI;
+import java.nio.charset.Charset;
+
+import org.apache.http.Header;
+import org.apache.http.HeaderElement;
+import org.apache.http.HeaderIterator;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpStatus;
+import org.apache.http.HttpVersion;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.BufferedHttpEntity;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.FileEntity;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicHeaderElementIterator;
+import org.apache.http.message.BasicHttpResponse;
+import org.apache.http.util.EntityUtils;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestHttpClientAll {
+	private CloseableHttpClient httpClient;
+	@Before
+	public void init(){
+		httpClient = HttpClients.createDefault();
+	}
+	@After
+	public void destroy() throws IOException{
+		httpClient.close();
+	}
+	@Test
+	public void testRequest() throws Exception {
+		//HttpGet httpget = new HttpGet("http://www.google.com/search?hl=en&q=httpclient&btnG=Google+Search&aq=f&oq=");
+		URI uri=new URIBuilder().setScheme("http")
+				.setHost("www.google.com")
+				//.setPort(8080)
+				.setPath("/search")
+				.setParameter("q", "httpclient")
+				.setParameter("btnG", "Google Search")
+				.setParameter("aq", "f")
+				.setParameter("oq", "")
+				.build();
+		HttpGet httpGet = new HttpGet(uri);
+		System.out.println(httpGet.getURI());
+		
+	}
+	@Test
+	public void testResponse() throws Exception {
+		BasicHttpResponse response = new BasicHttpResponse(HttpVersion.HTTP_1_1, HttpStatus.SC_OK, "OK");
+		System.out.println(response.getProtocolVersion());
+		System.out.println(response.getStatusLine().getStatusCode());
+		System.out.println(response.getStatusLine().getReasonPhrase());
+		System.out.println(response.getStatusLine().toString());
+	}
+	@Test
+	public void testHeader() throws Exception {
+		BasicHttpResponse response = new BasicHttpResponse(HttpVersion.HTTP_1_1, HttpStatus.SC_OK, "OK");
+		response.addHeader("Set-Cookie", "c1=a; path=/; domain=localhost");
+		response.addHeader("Set-Cookie", "c2=b; path=\"/\", c3=c; domain=\"localhost\"");
+		Header header1 = response.getFirstHeader("Set-Cookie");
+		System.out.println(header1);
+		Header header2 = response.getLastHeader("Set-Cookie");
+		System.out.println(header2);
+		Header[] headers = response.getHeaders("Set-Cookie");
+		System.out.println(headers.length);
+	}
+	@Test
+	public void testHeader1() throws Exception {
+		BasicHttpResponse response = new BasicHttpResponse(HttpVersion.HTTP_1_1, HttpStatus.SC_OK, "OK");
+		response.addHeader("Set-Cookie", "c1=a; path=/; domain=localhost");
+		response.addHeader("Set-Cookie", "c2=b; path=\"/\", c3=c; domain=\"localhost\"");
+		HeaderIterator it = response.headerIterator("Set-Cookie");
+		while(it.hasNext()){
+			//System.out.println(it.nextHeader());
+			System.out.println(it.next());
+		}
+	}
+	@Test
+	public void testHeader2() throws Exception {
+		BasicHttpResponse response = new BasicHttpResponse(HttpVersion.HTTP_1_1, HttpStatus.SC_OK, "OK");
+		response.addHeader("Set-Cookie", "c1=a; path=/; domain=localhost");
+		response.addHeader("Set-Cookie", "c2=b; path=\"/\", c3=c; domain=\"localhost\"");
+		BasicHeaderElementIterator it = new BasicHeaderElementIterator(response.headerIterator("Set-Cookie"));
+		while(it.hasNext()){
+			HeaderElement elem = it.nextElement();
+			System.out.println(elem.getName()+"="+elem.getValue());
+			NameValuePair[] params = elem.getParameters();
+			for (NameValuePair nameValuePair : params) {
+				System.out.println(" "+nameValuePair);
+			}
+		}
+		
+	}
+	@Test
+	public void testEntity() throws Exception {
+		//StringEntity entity = new StringEntity("important message",ContentType.create("text/plain","UTF-8"));
+		StringEntity entity = new StringEntity("important message",ContentType.create("text/plain",Charset.forName("UTF-8")));
+		System.out.println(entity.getContentType());
+		//System.out.println(entity.getContentEncoding());
+		System.out.println(entity.getContentLength());
+		//System.out.println(entity.getContent());
+		System.out.println(EntityUtils.toString(entity));
+		System.out.println(EntityUtils.toByteArray(entity).length);
+	}
+	@Test
+	public void testEntity1() throws Exception {
+		HttpGet httpGet = new HttpGet("http://localhost/springmvc/itemList");
+		CloseableHttpResponse response = httpClient.execute(httpGet);
+		HttpEntity entity = response.getEntity();
+		if(entity!=null){
+			InputStream in = entity.getContent();
+			byte[] buf = new byte[1024];
+			int len=-1;
+			while((len=in.read(buf))!=-1){
+				System.out.print(new String(buf, 0, len));
+			}
+			in.close();
+		}
+		response.close();
+	}
+	@Test
+	public void testEntity2() throws Exception {
+		HttpGet httpGet = new HttpGet("http://localhost/springmvc/itemList");
+		CloseableHttpResponse response = httpClient.execute(httpGet);
+		HttpEntity entity = response.getEntity();
+		if(entity!=null){
+			InputStream in = entity.getContent();
+			int byteOne = in.read();
+			int byteTwo = in.read();
+			System.out.println(byteOne+"..."+byteTwo);
+		}
+		response.close();
+	}
+	//强烈不推荐使用EntityUtils 这个类，除非目标服务器发出的响应是可信任的，并且http 响应实体的长度不会过大。
+	@Test
+	public void testEntity3() throws Exception {
+		HttpGet httpGet = new HttpGet("http://localhost/springmvc/itemList");
+		CloseableHttpResponse response = httpClient.execute(httpGet);
+		HttpEntity entity = response.getEntity();
+		if(entity!=null){
+			long len = entity.getContentLength();
+			if(len != -1 && len < 2048){
+				System.out.println(EntityUtils.toString(entity));
+			}else{
+				//stream content out
+			}
+		}
+		response.close();
+	}
+	//把Http Entity 转化成BufferedHttpEntity，这样就把原Http 实体的内容缓冲到了内存中。后面我们就可以重复读取BufferedHttpEntity 中的内容。
+	@Test
+	public void testBufferedHttpEntity() throws Exception {
+		HttpGet httpGet = new HttpGet("http://localhost/springmvc/itemList.action");
+		CloseableHttpResponse response = httpClient.execute(httpGet);
+		HttpEntity entity = response.getEntity();
+		if(entity!=null){
+			entity = new BufferedHttpEntity(entity);
+			System.out.println(EntityUtils.toString(entity));
+			System.out.println(EntityUtils.toString(entity));
+			
+		}
+		response.close();
+	}
+	//HttpClient 提供了一些类，这些类可以通过http 连接高效地输出Http 实体内容。HttpClient 提供的这几个类涵盖的常见的数据类型，如String，byte 数组，输入流，和文件类型：	StringEntity,ByteArrayEntity,InputStreamEntity,FileEntity。
+	@Test
+	public void testName() throws Exception {
+		File file = new File("d:"+File.separator+"a.txt");
+		FileEntity entity = new FileEntity(file, ContentType.create("text/plain","UTF-8"));
+		HttpPost httpPost = new HttpPost("http://localhost/springmvc/postEntity");
+		httpPost.setEntity(entity);
+		CloseableHttpResponse response = httpClient.execute(httpPost);
+		HttpEntity entity2 = response.getEntity();
+		if(entity2!=null){
+			System.out.println(EntityUtils.toString(entity2));
+		}
+		response.close();
+	}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+  	<commentGenerator>
+  		<property name="suppressAllComments" value="true"/>
+  	</commentGenerator>
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/privilegepractice" driverClass="com.mysql.jdbc.Driver" password="123456" userId="root" />
+    <javaModelGenerator targetPackage="cn.itcast.privilegedemo.pojo" targetProject="privilegedemo/src/main/java" />
+    <sqlMapGenerator targetPackage="cn.itcast.privilegedemo.mapper" targetProject="privilegedemo/src/main/java" />
+    <javaClientGenerator targetPackage="cn.itcast.privilegedemo.mapper" targetProject="privilegedemo/src/main/java" type="XMLMAPPER" />
+    <table schema="" tableName="t_user"></table>
+    <table schema="" tableName="t_user_role"></table>
+    <table schema="" tableName="t_role"></table>
+    <table schema="" tableName="t_role_privilege"></table>
+    <table schema="" tableName="t_privilege"></table>
+    <table schema="" tableName="t_department"></table>
+  </context>
+</generatorConfiguration>

@@ -1,0 +1,112 @@
+package cn.itcast.privilegedemo.web.realm;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.AuthenticationInfo;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
+import org.apache.shiro.realm.AuthorizingRealm;
+import org.apache.shiro.subject.PrincipalCollection;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import cn.itcast.privilegedemo.mapper.PrivilegeMapper;
+import cn.itcast.privilegedemo.mapper.RoleMapper;
+import cn.itcast.privilegedemo.mapper.RolePrivilegeMapper;
+import cn.itcast.privilegedemo.mapper.UserMapper;
+import cn.itcast.privilegedemo.mapper.UserRoleMapper;
+import cn.itcast.privilegedemo.pojo.Privilege;
+import cn.itcast.privilegedemo.pojo.PrivilegeExample;
+import cn.itcast.privilegedemo.pojo.Role;
+import cn.itcast.privilegedemo.pojo.RoleExample;
+import cn.itcast.privilegedemo.pojo.RolePrivilege;
+import cn.itcast.privilegedemo.pojo.RolePrivilegeExample;
+import cn.itcast.privilegedemo.pojo.User;
+import cn.itcast.privilegedemo.pojo.UserExample;
+import cn.itcast.privilegedemo.pojo.UserRole;
+import cn.itcast.privilegedemo.pojo.UserRoleExample;
+
+public class MyRealm extends AuthorizingRealm {
+	@Autowired
+	private UserMapper userMapper;
+	@Autowired
+	private UserRoleMapper userRoleMapper;
+	@Autowired
+	private RoleMapper roleMapper;
+	@Autowired
+	private RolePrivilegeMapper rolePrivilegeMapper;
+	@Autowired
+	private PrivilegeMapper privilegeMapper;
+	
+	//授权方法
+	@Override
+	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+		// 为用户授权
+		// info.addStringPermission("department-list");
+		// 根据当前用户查询数据库，获得实际权限添加到info中
+		User user = (User) SecurityUtils.getSubject().getPrincipal();
+		//User user = (User) principals.getPrimaryPrincipal();
+		if (user.getUsername().equals("admin")) {
+			//如果是超级管理员，查询并添加所有的权限
+			List<Privilege> list = privilegeMapper.selectByExample(null);
+			for (Privilege privilege : list) {
+				info.addStringPermission(privilege.getCode());
+			}
+		} else {
+			UserRoleExample userRoleExample = new UserRoleExample();
+			userRoleExample.createCriteria().andUserIdEqualTo(user.getId());
+			List<UserRole> userRoleList = userRoleMapper.selectByExample(userRoleExample);
+			if (userRoleList != null && userRoleList.size() > 0) {
+				for (UserRole userRole : userRoleList) {
+					RolePrivilegeExample rolePrivilegeExample = new RolePrivilegeExample();
+					rolePrivilegeExample.createCriteria().andRoleIdEqualTo(userRole.getRoleId());
+					List<RolePrivilege> rolePrivilegeList = rolePrivilegeMapper.selectByExample(rolePrivilegeExample);
+					if (rolePrivilegeList != null && rolePrivilegeList.size() > 0) {
+						for (RolePrivilege rolePrivilege : rolePrivilegeList) {
+							Privilege privilege = privilegeMapper.selectByPrimaryKey(rolePrivilege.getPrivilegeId());
+							if (privilege != null && StringUtils.isNotBlank(privilege.getCode())) {
+								System.out.println(privilege.getCode());
+								info.addStringPermission(privilege.getCode());
+								Set<String> stringPermissions = info.getStringPermissions();
+								if(!stringPermissions.isEmpty()){
+									Iterator<String> it = stringPermissions.iterator();
+									while(it.hasNext()){
+										System.out.println(it.next());
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return info;
+	}
+
+	// 认证方法
+	@Override
+	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+		UsernamePasswordToken myToken = (UsernamePasswordToken) token;
+		String username = myToken.getUsername();
+		//根据用户名查询数据库中的密码
+		UserExample example = new UserExample();
+		example.createCriteria().andUsernameEqualTo(username);
+		List<User> list = userMapper.selectByExample(example);
+		if (list == null || list.size() <= 0) {
+			//用户名不存在
+			return null;
+		}
+		User user = list.get(0);
+		//如果能查到，再由框架比对数据库中查询到的密码和页面提交的密码是否一致，第一个参数为根据数据库查询的user对象，第二个参数为查询到的用户密码，第三个参数为realm的名称
+		AuthenticationInfo info = new SimpleAuthenticationInfo(user, user.getPassword(), this.getName());
+		return info;
+	}
+}

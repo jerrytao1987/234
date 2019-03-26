@@ -1,0 +1,41 @@
+1552447406141	Delete element
+1552448137666	Delete element
+1552448143161	Delete elements
+1552448338830	Delete element
+1552448359051	Move file
+1552449394123	Copy file
+1552450933462	Extract local variable 'list'
+1552450986589	Extract local variable 'list'
+1552452518525	Extract local variable 'ac'
+1552452553215	Extract local variable 'itemMapper'
+1552452570837	Extract local variable 'list'
+1552452885393	Move file
+1552452893128	Move file
+1552453924158	Extract local variable 'itemService'
+1552453937579	Extract local variable 'list'
+1552464866442	Delete element
+1552467610675	Extract local variable 'modelAndView'
+1552468049635	Extract local variable 'id'
+1552470735891	Extract local variable 'sdf'
+1552470759316	Extract local variable 'date'
+1552481863023	Extract local variable 'writer'
+1552481898683	Extract local variable 's'
+1552482001905	Extract local variable 'modelAndView'
+1552485572865	Extract local variable 'originalFilename'
+1552485686465	Extract local variable 'extName'
+1552550031357	Copy compilation unit
+1552552137627	Rename type 'PrivilegeInterceptor'
+1552552455607	Extract local variable 'user'
+1552552742988	Extract local variable 'requestURL'
+1552553018001	Extract local variable 'index'
+1552617057424	Extract local variable 'user'
+1552617745420	Extract local variable 'user1'
+1552635785250	Copy file
+1552742585128	Extract local variable 'map'
+1552742598745	Extract local variable 'entrySet'
+1552742910151	Extract local variable 'entrySet'
+1552743401270	Extract local variable 'in'
+1552743640662	Extract local variable 'name'
+1552743745593	Extract local variable 'in'
+1552743877345	Extract local variable 'out'
+1552744864455	Copy compilation unit

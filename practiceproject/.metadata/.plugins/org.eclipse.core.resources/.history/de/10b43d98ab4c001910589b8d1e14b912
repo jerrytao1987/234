@@ -1,0 +1,42 @@
+package testjdbc;
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class JdbcDemo {
+	private Connection conn;
+	@Before
+	public void init() throws ClassNotFoundException, SQLException{
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08", "root", "123456");
+	}
+	@Test
+	public void func1() throws Exception {
+		String sql = "select * from tbl_user where uname=? and upassword=?";
+		PreparedStatement pst = conn.prepareStatement(sql);
+		pst.setString(0, "老王");
+		pst.setString(1, "999");
+		ResultSet result = pst.executeQuery();
+		while(result.next()){
+			String uid = result.getString("uid");
+			String uname = result.getString("uname");
+			String upassword = result.getString("upassword");
+			System.out.println(uid+"/t"+uname+"/t"+upassword);
+		}
+		result.close();
+		pst.close();
+	}
+	@After
+	public void destroy(){
+		conn.close();
+	}
+}

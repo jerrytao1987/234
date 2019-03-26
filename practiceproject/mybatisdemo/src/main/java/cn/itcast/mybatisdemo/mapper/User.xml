@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql -->
+<!-- 还有一个很重要的作用，使用动态代理开发DAO，1. namespace必须和Mapper接口类路径一致 -->
+<mapper namespace="test">
+	<!-- id:statement的id 或者叫做sql的id-->
+	<!-- parameterType:声明输入参数的类型 -->
+	<!-- resultType:声明输出结果的类型，应该填写pojo的全路径 -->
+	<!-- #{}：输入参数的占位符，相当于jdbc的？ -->
+	<select id="queryUserById" parameterType="int" resultType="cn.itcast.mybatisdemo.pojo.User">
+		select * from user where id=#{id}
+	</select>
+	<!-- 如果返回多个结果，mybatis会自动把返回的结果放在list容器中 -->
+	<!-- resultType的配置和返回一个结果的配置一样 -->
+	<select id="queryUserByUsername1" parameterType="String" resultType="cn.itcast.mybatisdemo.pojo.User">
+		select * from user where username like #{username}
+	</select>
+	<!-- 如果传入的参数是简单数据类型，${}里面必须写value -->
+	<select id="queryUserByUsername2" parameterType="String" resultType="cn.itcast.mybatisdemo.pojo.User">
+		select * from user where username like "%${value}%"
+	</select>
+	<select id="queryUserByUsername3" parameterType="String" resultType="cn.itcast.mybatisdemo.pojo.User">
+		select * from user where username like "%"#{v}"%"
+	</select>
+	<!-- 保存用户 -->
+	<insert id="saveUser" parameterType="cn.itcast.mybatisdemo.pojo.User">
+		<selectKey keyProperty="id" order="AFTER" resultType="int">
+			select last_insert_id()
+		</selectKey>
+		insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+	</insert>
+	<!-- 更新用户 -->
+	<update id="updateUserById" parameterType="cn.itcast.mybatisdemo.pojo.User">
+		update user set username=#{username} where id=#{id}
+	</update>
+	<!-- 删除用户 -->
+	<delete id="deleteUserById" parameterType="int">
+		delete from user where id=#{v}
+	</delete>
+</mapper>

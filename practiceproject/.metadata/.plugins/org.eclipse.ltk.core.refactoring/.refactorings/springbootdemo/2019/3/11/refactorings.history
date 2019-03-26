@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;springApplication&apos; from expression &apos;new SpringApplication(HelloApplication.class)&apos;&#x0D;&#x0A;- Original project: &apos;springbootdemo&apos;&#x0D;&#x0A;- Variable name: &apos;springApplication&apos;&#x0D;&#x0A;- Destination method: &apos;cn.itcast.springboot.controller.HelloApplication.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;new SpringApplication(HelloApplication.class)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;springApplication&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;cn.itcast.springboot.controller{HelloApplication.java" name="springApplication" replace="true" selection="740 0" stamp="1552652356664" version="1.0"/>
+</session>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<!-- 指定struts2是否以开发模式运行
+			1.热加载主配置.(不需要重启服务器即可生效)
+			2.提供更多错误信息输出,方便开发时的调试
+	 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<package name="ssh" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="autoLoginInterceptor" class="cn.itcast.ssh.web.action.AutoLoginInterceptor"></interceptor>
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="autoLoginInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		<global-results>
+			<result name="toLogin" type="redirect">/login.jsp</result>
+		</global-results>
+		<action name="userAction_*" class="userAction" method="{1}">
+			<!--  <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">500000000</param>
+                <param name="fileUpload.allowedTypes">text/plain,application/vnd.ms-powerpoint</param>
+                <param name="fileUpload.allowedExtensions">.jpg,.txt,.ppt</param>
+            </interceptor-ref> -->
+			<result>/index.jsp</result>
+			<result name="login">/login.jsp</result>
+			 <!-- 出现错误自动会返回input结果，进入结果视图 -->
+            <result name="input" >/error.jsp</result>
+		</action>
+		<action name="fileUploadAction_*" class="fileUploadAction" method="{1}">
+			<!--  <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">500000000</param>
+                <param name="fileUpload.allowedTypes">text/plain,application/vnd.ms-powerpoint</param>
+                <param name="fileUpload.allowedExtensions">.jpg,.txt,.ppt</param>
+            </interceptor-ref> -->
+			<result>/index.jsp</result>
+			 <!-- 出现错误自动会返回input结果，进入结果视图 -->
+            <result name="input" >/error.jsp</result>
+		</action>
+	</package>
+	
+</struts>

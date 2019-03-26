@@ -1,0 +1,112 @@
+package testjdbc;
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class JdbcDemo {
+	private Connection conn;
+	@Before
+	public void init() throws ClassNotFoundException, SQLException{
+		Class.forName("com.mysql.jdbc.Driver");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08?useSSL=false", "root", "123456");
+	}
+	@Test
+	public void func1() throws Exception {
+		String sql = "select * from tbl_user where uname=? and upassword=?";
+		PreparedStatement pst = conn.prepareStatement(sql);
+		pst.setString(1, "老王");
+		pst.setString(2, "999");
+		ResultSet result = pst.executeQuery();
+		while(result.next()){
+			String uid = result.getString("uid");
+			String uname = result.getString("uname");
+			String upassword = result.getString("upassword");
+			System.out.println(uid+"\t"+uname+"\t"+upassword);
+		}
+		result.close();
+		pst.close();
+	}
+	@Test
+	public void func2() throws SQLException{
+		Statement stat = conn.createStatement();
+		String sql = "select * from tbl_user";
+		ResultSet rs = stat.executeQuery(sql);
+		while(rs.next()){
+			System.out.println(rs.getString(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
+		}
+		rs.close();
+		stat.close();
+	}
+	@Test
+	public void func3() throws SQLException {
+		String sql = "insert into tbl_user values(null,?,?)";
+		PreparedStatement pst = conn.prepareStatement(sql);
+		pst.setString(1,"jerry");
+		pst.setString(2, "123456");
+		pst.addBatch();
+		pst.setString(1, "tom");
+		pst.setString(2, "123456");
+		pst.addBatch();
+		int[] result = pst.executeBatch();
+		//ResultSet rs = pst.executeQuery();
+		for(Integer i:result){
+			System.out.println(i);
+		}
+		pst.close();
+	}
+	@Test
+	public void func4() throws Exception {
+		QueryRunner qr = new QueryRunner();
+		String sql = "update tbl_user set uname=?,upassword=? where uid=?";
+		Object[] param = {"jack","123456",5};
+		qr.update(conn, sql , param);
+	}
+	@Test
+	public void func5() throws SQLException {
+		QueryRunner qr = new QueryRunner();
+		String sql="select * from tbl_user";
+		List<User> list = qr.query(conn, sql, new BeanListHandler<User>(User.class));
+		for(int i=0;i<list.size();i++){
+			System.out.println(list.get(i).getUname()+"\t"+list.get(i).getUpassword());
+		}
+	}
+	@After
+	public void destroy() throws SQLException{
+		conn.close();
+	}
+	public static void main(String[] args) throws ClassNotFoundException, SQLException{
+		Connection conn;
+		PreparedStatement pst;
+		ResultSet rs;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08","root","123456");
+			String sql = "select * from tbl_user where uid=?";
+			pst = conn.prepareStatement(sql);
+			pst.setInt(1, 5);
+			rs = pst.executeQuery();
+			while(rs.next()){
+				System.out.println(rs.getInt("uid")+"\t"+rs.getString(2)+"\t"+rs.getString("upassword"));
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		rs.close();
+		pst.close();
+		conn.close();
+	}
+}

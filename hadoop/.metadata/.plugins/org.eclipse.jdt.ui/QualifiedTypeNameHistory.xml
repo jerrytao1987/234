@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.hadoop.hbase.filter.RowFilter"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.hbase.filter.SingleColumnValueFilter"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.hbase.filter.SubstringComparator"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.hbase.filter.RegexStringComparator"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
 <fullyQualifiedTypeName name="org.springframework.boot.Banner.Mode"/>
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration"/>
+<fullyQualifiedTypeName name="test.c"/>
 </qualifiedTypeNameHistroy>

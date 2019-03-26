@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<constant name="struts.action.extension" value="action,,"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="hello" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="myInterceptor" class="com.struts2demo.web.interceptor.MyInterceptor"></interceptor>
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="myInterceptor">
+					<!-- <param name="excludeMethods">execute</param> -->
+					<param name="includeMethods">execute</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		<global-results>
+			<result>/WEB-INF/jsp/global.jsp</result>
+			<result name="error" type="redirect">/error.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.RuntimeException"></exception-mapping>
+		</global-exception-mappings>
+		<action name="helloAction" class="com.struts2demo.web.action.HelloAction" method="hello">
+			<result name="success" type="dispatcher">/WEB-INF/jsp/login.jsp</result>
+		</action>
+		<action name="demoAction" class="com.struts2demo.web.action.DemoAction" >
+			<result>/index.jsp</result>
+		</action>
+		<action name="demo1Action_*" class="com.struts2demo.web.action.Demo1Action" method="{1}">
+			<result name="success" type="redirect">/index.jsp</result>
+		</action>
+		<action name="demo2Action_*" class="com.struts2demo.web.action.Demo2Action" method="{1}">
+			<result>/WEB-INF/jsp/getValue.jsp</result>
+		</action>
+	</package>
+	<include file="com/struts2demo/web/action/struts.xml"></include>
+</struts>

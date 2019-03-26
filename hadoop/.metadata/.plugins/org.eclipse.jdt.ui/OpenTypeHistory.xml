@@ -2,4 +2,5 @@
 <typeInfoHistroy>
 <typeInfo handle="=weekend110/src&lt;cn.itcast.hadoop.rpc{LoginServiceInterface.java[LoginServiceInterface" modifiers="513" timestamp="1544587477867"/>
 <typeInfo handle="=itcast-springboot/D:\/apache-maven-3.3.9-bin\/repository\/org\/springframework\/boot\/spring-boot-autoconfigure\/1.5.2.RELEASE\/spring-boot-autoconfigure-1.5.2.RELEASE.jar&lt;org.springframework.boot.autoconfigure.web(WebMvcAutoConfiguration.class[WebMvcAutoConfiguration" modifiers="33" timestamp="1550631852468"/>
+<typeInfo handle="=storm-kafka/D:\/develop\/Java\/jdk1.7.0_72\/jre\/lib\/rt.jar&lt;java.lang(StringBuffer.class[StringBuffer" modifiers="49" timestamp="1519654835762"/>
 </typeInfoHistroy>

@@ -1,0 +1,67 @@
+package testjdbc;
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class JdbcDemo {
+	private Connection conn;
+	@Before
+	public void init() throws ClassNotFoundException, SQLException{
+		Class.forName("com.mysql.jdbc.Driver");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08?useSSL=false", "root", "123456");
+	}
+	@Test
+	public void func1() throws Exception {
+		String sql = "select * from tbl_user where uname=? and upassword=?";
+		PreparedStatement pst = conn.prepareStatement(sql);
+		pst.setString(1, "老王");
+		pst.setString(2, "999");
+		ResultSet result = pst.executeQuery();
+		while(result.next()){
+			String uid = result.getString("uid");
+			String uname = result.getString("uname");
+			String upassword = result.getString("upassword");
+			System.out.println(uid+"\t"+uname+"\t"+upassword);
+		}
+		result.close();
+		pst.close();
+	}
+	@Test
+	public void func2() throws SQLException{
+		Statement stat = conn.createStatement();
+		String sql = "select * from tbl_user";
+		ResultSet rs = stat.executeQuery(sql);
+		while(rs.next()){
+			System.out.println(rs.getString(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
+		}
+		rs.close();
+		stat.close();
+	}
+	@Test
+	public void func3() throws SQLException {
+		String sql = "select * from tbl_user where uid=?";
+		PreparedStatement pst = conn.prepareStatement(sql);
+		//pst.setString(1, "5");
+		pst.setInt(1, 5);
+		ResultSet rs = pst.executeQuery();
+		while(rs.next()){
+			System.out.println(rs.getString("uid")+"\t"+rs.getString("uname")+"\t"+rs.getString("upassword"));
+		}
+		rs.close();
+		pst.close();
+	}
+	@After
+	public void destroy() throws SQLException{
+		conn.close();
+	}
+}

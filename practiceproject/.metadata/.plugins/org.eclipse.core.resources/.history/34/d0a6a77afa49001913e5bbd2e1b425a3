@@ -1,0 +1,27 @@
+package cn.itcast.privilegedemo.web.controller;
+
+import java.util.List;
+
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.itcast.privilegedemo.pojo.Department;
+import cn.itcast.privilegedemo.service.DepartmentService;
+
+
+@Controller
+public class DepartmentController {
+	@Autowired
+	private DepartmentService departmentService;
+	
+	@RequestMapping("/departmentList.action")
+	@ResponseBody
+	@RequiresPermissions("department-list")
+	public List<Department> find(){
+		List<Department> list = departmentService.find();
+		return list;
+	}
+}

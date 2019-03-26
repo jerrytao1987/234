@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.mybatis.generator.eclipse.launching.LaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/springmvcdemo"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="springmvcdemo"/>
+<stringAttribute key="org.mybatis.generator.eclipse.ui.CONFIG_TAB.FILE_NAME" value="${workspace_loc:/springmvcdemo/generatorConfig.xml}"/>
+</launchConfiguration>

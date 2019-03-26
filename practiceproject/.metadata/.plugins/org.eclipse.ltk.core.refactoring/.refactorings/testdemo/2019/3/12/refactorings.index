@@ -1,0 +1,7 @@
+1553260234118	Extract local variable 'forName'
+1553260331288	Extract local variable 'con'
+1553263262204	Extract local variable 'result'
+1553263302473	Extract local variable 'next'
+1553265924829	Extract local variable 'qr'
+1553266183129	Extract local variable 'qr'
+1553266272367	Extract local variable 'list'

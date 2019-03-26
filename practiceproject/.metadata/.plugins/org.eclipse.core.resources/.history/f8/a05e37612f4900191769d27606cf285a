@@ -1,0 +1,8 @@
+package cn.itcast.springmvc.pojo;
+
+import java.util.List;
+
+public class QueryVo {
+	private Integer[] ids;
+	private List<Items> itemList;
+}

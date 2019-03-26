@@ -1,0 +1,22 @@
+package cn.itcast.privilegedemo.mapper;
+
+import cn.itcast.privilegedemo.pojo.TRolePrivilege;
+import cn.itcast.privilegedemo.pojo.TRolePrivilegeExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface TRolePrivilegeMapper {
+    long countByExample(TRolePrivilegeExample example);
+
+    int deleteByExample(TRolePrivilegeExample example);
+
+    int insert(TRolePrivilege record);
+
+    int insertSelective(TRolePrivilege record);
+
+    List<TRolePrivilege> selectByExample(TRolePrivilegeExample example);
+
+    int updateByExampleSelective(@Param("record") TRolePrivilege record, @Param("example") TRolePrivilegeExample example);
+
+    int updateByExample(@Param("record") TRolePrivilege record, @Param("example") TRolePrivilegeExample example);
+}

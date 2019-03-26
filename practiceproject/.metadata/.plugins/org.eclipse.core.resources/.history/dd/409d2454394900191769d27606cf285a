@@ -1,0 +1,5 @@
+package cn.itcast.privilegedemo.web.exception;
+
+public class MyHandlerException {
+
+}

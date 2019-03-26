@@ -1,0 +1,5 @@
+package cn.itcast.privilegedemo.web.filter;
+
+public class SystemLogoutFilter {
+
+}

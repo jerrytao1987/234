@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=day10/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.sql(DriverManager.class[DriverManager" modifiers="33" timestamp="1519654917647"/>
 <typeInfo handle="=day10/src&lt;cn.itcast.demo2{Develop.java[Develop" modifiers="1025" timestamp="1531815680560"/>
 <typeInfo handle="=day10/src&lt;cn.itcast.demo1{Fu1.java[Fu1" modifiers="1" timestamp="1531835469641"/>
 <typeInfo handle="=day11/src&lt;cn.itcast.demo1{Fu.java[Fu" modifiers="1" timestamp="1545729298245"/>
@@ -10,17 +9,8 @@
 <typeInfo handle="=day13/src&lt;cn.itcast.demo3{Fu.java[Fu" modifiers="1" timestamp="1531987597932"/>
 <typeInfo handle="=day14/src&lt;cn.itcast.hotel{VIP.java[VIP" modifiers="513" timestamp="1532504495916"/>
 <typeInfo handle="=day14/src&lt;cn.itcast.hotel{Employee.java[Employee" modifiers="1025" timestamp="1532506546995"/>
-<typeInfo handle="=day21/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1519654917647"/>
-<typeInfo handle="=day22/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;javax.swing.filechooser(FileFilter.class[FileFilter" modifiers="1057" timestamp="1519654917647"/>
-<typeInfo handle="=day22/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.io(FileFilter.class[FileFilter" modifiers="1537" timestamp="1519654917647"/>
-<typeInfo handle="=day26/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1519654917647"/>
-<typeInfo handle="=day26/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.util.concurrent(Callable.class[Callable" modifiers="1537" timestamp="1519654917647"/>
-<typeInfo handle="=day27/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1519654917647"/>
-<typeInfo handle="=WEB10_JDBC/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;javax.sql(DataSource.class[DataSource" modifiers="1537" timestamp="1519654917647"/>
-<typeInfo handle="=WEB10_JDBC/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;java.net(DatagramSocketImplFactory.class[DatagramSocketImplFactory" modifiers="1537" timestamp="1519654917647"/>
 <typeInfo handle="=WEB12/D:\/apache-tomcat-7.0.52\/lib\/jasper.jar&lt;org.apache.jasper.runtime(HttpJspBase.class[HttpJspBase" modifiers="1057" timestamp="1392258570000"/>
 <typeInfo handle="=WEB08_JDBC/lib\/mysql-connector-java-5.1.39-bin.jar&lt;com.mysql.jdbc(Driver.class[Driver" modifiers="33" timestamp="1530929277825"/>
-<typeInfo handle="=HeimaShop/D:\/develop\/Java\/jre7\/lib\/rt.jar&lt;javax.security.auth.login(Configuration.class[Configuration" modifiers="1057" timestamp="1519654917647"/>
 <typeInfo handle="=HeimaShop/D:\/apache-tomcat-7.0.52\/lib\/catalina.jar&lt;org.apache.catalina.servlets(DefaultServlet.class[DefaultServlet" modifiers="33" timestamp="1392258570000"/>
 <typeInfo handle="=HeimaShop/D:\/apache-tomcat-7.0.52\/lib\/jasper.jar&lt;org.apache.jasper.servlet(JspServlet.class[JspServlet" modifiers="33" timestamp="1392258570000"/>
 </typeInfoHistroy>
